@@ -1,0 +1,199 @@
+
+  body{
+    margin: 0;
+    padding: 0;    
+    background: white;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    height: auto;
+  } 
+  
+/* initialize the .header style: sizes, colors and fonts*/
+    .header{
+        padding-top: 1px;
+        height: 682px;
+        margin: 0;
+        color: white;
+        background-color: black;
+        width: 100%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;    
+    }
+        /* using flexbox for nav tag*/
+        .nav{
+            margin-bottom: -100px;
+            width: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3C3A39;  
+            
+        }
+        .my-logo{
+            margin-left: 24px;
+        }
+        .burger-menu{
+            margin: 10px;
+            margin-right: 35px;
+            font-size: 30px;
+        }
+
+/* initialize the .main and use flexbox for all his childs*/
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    margin-left: 24px;
+    
+}
+
+/* initialize the .h,h-1,h-2,h-3: sizes, colors, and fonts*/
+   
+   .h-1{
+    
+    width: 327px;
+    height: 124px;  
+    color: #FF6B00;
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    margin-top: 190px;
+
+  }
+  .h-2{
+    color: #FFF5E1;
+    width: 327px;
+    height: 27px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;   
+}
+    .para-1{
+        color: white;
+        width: 327px;
+        height: 123px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+  /* initialize the div-1 style: background-colors */ 
+
+
+  .div-img{
+    display: flex;
+    position:absolute;
+    top: 250px;
+    bottom: 212px;
+    margin-left: 210px;
+    justify-content: end;
+    float: right;  
+
+ }  
+ .img-1{
+     margin-top: 70px;
+     margin-left: 35px;
+     width: 100%;
+     height: 410px;
+ } 
+
+ .div-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 1px;
+    padding-bottom: 125px;
+    height: 682px;
+    margin-left: 24px;
+    margin-top: 100px;
+    color: black;
+ }
+ .header-2{
+    width: 327px;
+    height: 83px;    
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #1C1A19;
+
+ }
+ .my-separator {
+    width: 327px;  
+    top: 107px;
+    margin-right: 50px;
+    border: 1px solid #212121;    
+  }
+ .img-2{
+    margin-top: 80px;
+    width: 327px;
+    height: auto;
+ }
+ .header-3{
+    color: #091E42;
+    width: 327px;
+    height: 36px;
+    font-family: 'Crete Round';
+ }
+ .para-2{
+    margin-top: -12px;
+    width: 327px;
+    height: 147px;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 24px;
+ }
+ .tech-stack{
+    width: 327px;
+    display: flex;
+    margin-top: -12px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 15px;
+    font-family: "Inter";
+}
+ .h4-1{
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 55px;
+    height: 40px;
+    border: 1px solid #8993A4;
+ }
+ .h4-2{
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 67px;
+    height: 40px;
+    border: 1px solid #8993A4;
+ }
+ .h4-3{
+
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 95px;
+    height: 40px;
+    border: 1px solid #8993A4;
+ }
+ .h4-4{
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 61px;
+    height: 40px;
+    border: 1px solid #8993A4;
+ }
+ .button{
+    color: white;
+    background-color: #FF6B00;
+    padding: 10px 12px;
+    width: 124px;
+    height: 48px;
+    border: 1px solid #FF6B00;
+}
