@@ -1,4 +1,4 @@
-
+/* My body config */
   body{
     margin: 0;
     padding: 0;    
@@ -84,7 +84,7 @@
         line-height: 24px;
     }
 
-  /* initialize the div-1 style: background-colors */ 
+  /* -- add style to div that contain the  img -- */ 
 
 
   .div-img{
@@ -103,8 +103,10 @@
      width: 100%;
      height: 410px;
  } 
-
- .div-2{
+  /* -- finish of the header-- */
+  /* -- second section of the web -- */
+  /* -- add style and flexbox -- */
+  .div-2{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -115,6 +117,7 @@
     margin-top: 100px;
     color: black;
  }
+   /* -- second tittle -- */
  .header-2{
     width: 327px;
     height: 83px;    
@@ -123,25 +126,29 @@
     font-weight: 400;
     font-size: 40px;
     color: #1C1A19;
-
  }
+   /* -- add a separator to thee web -- */
+
  .my-separator {
     width: 327px;  
     top: 107px;
     margin-right: 50px;
     border: 1px solid #212121;    
   }
+    /* -- add and image of my work example -- */
  .img-2{
     margin-top: 80px;
     width: 327px;
     height: auto;
  }
+   /* -- 3th tittle -- */
  .header-3{
     color: #091E42;
     width: 327px;
     height: 36px;
     font-family: 'Crete Round';
  }
+   /* -- add style to my second paragraph -- */
  .para-2{
     margin-top: -12px;
     width: 327px;
@@ -150,6 +157,7 @@
     font-size: 16px;
     line-height: 24px;
  }
+   /* -- add style and flexbox to my tech-stack class -- */
  .tech-stack{
     width: 327px;
     display: flex;
@@ -160,6 +168,7 @@
     font-size: 15px;
     font-family: "Inter";
 }
+  /* -- add style to all my h4  -- */
  .h4-1{
     box-sizing: border-box;
     padding: 10px 12px;
@@ -189,6 +198,7 @@
     height: 40px;
     border: 1px solid #8993A4;
  }
+   /* -- add style to the botton -- */
  .button{
     color: white;
     background-color: #FF6B00;
