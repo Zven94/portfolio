@@ -87,7 +87,7 @@ body {
 
 .div-img {
   display: flex;
-  position:absolute;
+  position: absolute;
   top: 250px;
   bottom: 212px;
   margin-left: 210px;
@@ -103,7 +103,9 @@ body {
 }
 
 /* -- finish of the header-- */
+
 /* -- second section of the web -- */
+
 /* -- add style and flexbox -- */
 
 .div-2 {
