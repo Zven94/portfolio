@@ -37,16 +37,15 @@ body {
 }
 
 .burger-menu {
-  margin-right: 35px;
   font-size: 30px;
-  margin: 10px;
+  margin: 10px 35px 10px 10px;
 }
 
 /* initialize the .main and use flexbox for all his childs */
 .main {
   display: flex;
   flex-direction: column;
-  align-items:start;
+  align-items: start;
   margin-left: 24px;
 }
 
@@ -54,7 +53,7 @@ body {
 .h-1 {
   width: 327px;
   height: 124px;
-  color: #FF6b00;
+  color: #ff6b00;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -84,7 +83,8 @@ body {
   line-height: 24px;
 }
 
-/* -- add style to div that contain the  img -- */ 
+/* -- add style to div that contain the  img -- */
+
 .div-img {
   display: flex;
   position:absolute;
@@ -105,6 +105,7 @@ body {
 /* -- finish of the header-- */
 /* -- second section of the web -- */
 /* -- add style and flexbox -- */
+
 .div-2 {
   display: flex;
   flex-direction: column;
@@ -118,6 +119,7 @@ body {
 }
 
 /* -- second tittle -- */
+
 .header-2 {
   width: 327px;
   height: 83px;
@@ -129,6 +131,7 @@ body {
 }
 
 /* -- add a separator to thee web -- */
+
 .my-separator {
   width: 327px;
   top: 107px;
@@ -137,6 +140,7 @@ body {
 }
 
 /* -- add and image of my work example -- */
+
 .img-2 {
   margin-top: 80px;
   width: 327px;
@@ -144,6 +148,7 @@ body {
 }
 
 /* -- 3th tittle -- */
+
 .header-3 {
   color: #091e42;
   width: 327px;
@@ -152,6 +157,7 @@ body {
 }
 
 /* -- add style to my second paragraph -- */
+
 .para-2 {
   margin-top: -12px;
   width: 327px;
@@ -162,18 +168,20 @@ body {
 }
 
 /* -- add style and flexbox to my tech-stack class -- */
+
 .tech-stack {
   width: 327px;
   display: flex;
   margin-top: -12px;
   flex-direction: row;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   font-size: 15px;
   font-family: "Inter", sans-serif;
 }
 
 /* -- add style to all my h4  -- */
+
 .h4-1 {
   box-sizing: border-box;
   padding: 10px 12px;
@@ -207,6 +215,7 @@ body {
 }
 
 /* -- add style to the botton -- */
+
 .button {
   color: white;
   background-color: #ff6b00;
