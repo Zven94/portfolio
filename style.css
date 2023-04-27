@@ -29,11 +29,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3C3a39;
+  background-color: #3c3a39;
 }
+
 .my-logo {
   margin-left: 24px;
 }
+
 .burger-menu {
   margin-right: 35px;
   font-size: 30px;
@@ -50,15 +52,16 @@ body {
 
 /* initialize the .h,h-1,h-2,h-3: sizes, colors, and fonts */
 .h-1 {
-width: 327px;
-height: 124px;
-color: #FF6b00;
-font-family: 'Crete Round', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 56px;
-margin-top: 190px;
+  width: 327px;
+  height: 124px;
+  color: #FF6b00;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  margin-top: 190px;
 }
+
 .h-2 {
   color: #fff5e1;
   width: 327px;
@@ -69,6 +72,7 @@ margin-top: 190px;
   font-size: 24px;
   line-height: 32px;
 }
+
 .para-1 {
   color: white;
   width: 327px;
@@ -89,7 +93,8 @@ margin-top: 190px;
   margin-left: 210px;
   justify-content: end;
   float: right;
-}  
+}
+
 .img-1 {
   margin-top: 70px;
   margin-left: 35px;
@@ -176,6 +181,7 @@ margin-top: 190px;
   height: 40px;
   border: 1px solid #8993a4;
 }
+
 .h4-2 {
   box-sizing: border-box;
   padding: 10px 12px;
@@ -183,6 +189,7 @@ margin-top: 190px;
   height: 40px;
   border: 1px solid #8993a4;
 }
+
 .h4-3 {
   box-sizing: border-box;
   padding: 10px 12px;
@@ -190,6 +197,7 @@ margin-top: 190px;
   height: 40px;
   border: 1px solid #8993a4;
 }
+
 .h4-4 {
   box-sizing: border-box;
   padding: 10px 12px;
@@ -197,6 +205,7 @@ margin-top: 190px;
   height: 40px;
   border: 1px solid #8993a4;
 }
+
 /* -- add style to the botton -- */
 .button {
   color: white;
