@@ -1,20 +1,26 @@
-/* My body config */
+/* @media give us the tool to creat a rule for an adaptative screen device*/
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+
+  /* My body config */
+
 body {
   margin: 0;
   padding: 0;
   background: white;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  height: auto;
+  height: auto;;
 }
 
 /* initialize the .header style: sizes, colors and fonts */
+
 .header {
   padding-top: 1px;
   height: 682px;
   margin: 0;
   color: white;
-  background-color: black;
+  background-color: #1c1a19;
   width: 100%;
   font-style: normal;
   font-weight: 700;
@@ -22,7 +28,9 @@ body {
 }
 
 /* using flexbox for nav tag */
+
 .nav {
+  top: 0;
   margin-bottom: -100px;
   width: 100%;
   position: fixed;
@@ -42,14 +50,23 @@ body {
 }
 
 /* initialize the .main and use flexbox for all his childs */
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: start;
+ 
+  height: 0px;
+}
+
+.section-1{
   margin-left: 24px;
+  background-color: transparent;
+  justify-content: start;
 }
 
 /* initialize the .h,h-1,h-2,h-3: sizes, colors, and fonts */
+
 .h-1 {
   width: 327px;
   height: 124px;
@@ -65,6 +82,7 @@ body {
   color: #fff5e1;
   width: 327px;
   height: 27px;
+  background-color: transparent;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -76,6 +94,7 @@ body {
   color: white;
   width: 327px;
   height: 123px;
+  background-color: transparent;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -83,23 +102,28 @@ body {
   line-height: 24px;
 }
 
+.social-media{
+  width: 200px;
+  margin-left: -45px;
+  flex-grow: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
 /* -- add style to div that contain the  img -- */
 
 .div-img {
   display: flex;
-  position: absolute;
-  top: 250px;
-  bottom: 212px;
-  margin-left: 210px;
+  flex-direction: column;  
   justify-content: end;
+  align-self:end;
   float: right;
+  flex-grow: 0;
 }
 
 .img-1 {
-  margin-top: 70px;
-  margin-left: 35px;
-  width: 100%;
-  height: 410px;
+  margin-top: -135px; 
 }
 
 /* -- finish of the header-- */
@@ -108,7 +132,7 @@ body {
 
 /* -- add style and flexbox -- */
 
-.div-2 {
+.section-2 {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -138,7 +162,15 @@ body {
   width: 327px;
   top: 107px;
   margin-right: 50px;
-  border: 1px solid #212121;
+
+  /*border: 1px solid #212121;*/
+  
+  height: 1px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+
+
 }
 
 /* -- add and image of my work example -- */
@@ -225,4 +257,5 @@ body {
   width: 124px;
   height: 48px;
   border: 1px solid #ff6b00;
+}
 }
