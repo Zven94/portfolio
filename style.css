@@ -313,6 +313,7 @@
   .h4-5 {
     float: left;
     box-sizing: border-box;
+    margin-right: 10px;
     padding: 10px 12px;
     width: 67px;
     height: 40px;
@@ -324,6 +325,7 @@
     float: left;
     box-sizing: border-box;
     padding: 10px 12px;
+    margin-right: 10px;
     width: 95px;
     height: 40px;
     background: rgba(255, 255, 255, 0.24);
