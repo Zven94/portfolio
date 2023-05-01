@@ -301,11 +301,9 @@
   .tech-stack-2 {
     color: white;
     width: 247px;
-    display: flex;
     bottom: 97px;
     left: 13px;
     position: absolute;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
@@ -313,6 +311,7 @@
   }
 
   .h4-5 {
+    float: left;
     box-sizing: border-box;
     padding: 10px 12px;
     width: 67px;
@@ -322,6 +321,7 @@
   }
 
   .h4-6 {
+    float: left;
     box-sizing: border-box;
     padding: 10px 12px;
     width: 95px;
@@ -331,6 +331,7 @@
   }
 
   .h4-7 {
+    float: left;
     box-sizing: border-box;
     padding: 10px 12px;
     width: 61px;
