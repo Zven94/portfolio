@@ -429,6 +429,7 @@
     position: relative;
     width: 327px;
     top: 10px;
+    left: 24px;
     margin-right: 50px;
     height: 1px;
     border-style: solid;
@@ -557,7 +558,7 @@
     cursor: not-allowed;
   }
 
-  .button:hover {
+  .button-4:hover {
     position: relative;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -570,6 +571,7 @@
     width: 131px;
     height: 48px;
     border: 1px solid #ff6b00;
+    transform: scale(1.1);
   }
 
   .my-separator-4 {
