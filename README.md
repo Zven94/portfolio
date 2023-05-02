@@ -109,7 +109,7 @@ In order to run this project you need: ---
 Clone this repository to your desired folder:
 
 cd my-folder
-git clone git@github.com:Zven94/Hello_Microverse.git
+git clone git@github.com:Zven94/portfolio.git
 
 ### Usage
 
