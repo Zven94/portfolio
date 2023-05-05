@@ -7,7 +7,7 @@
     display: none;
   }
 
-  .background-desktop-1{
+  .background-desktop-1 {
     display: none;
   }
 
@@ -15,11 +15,11 @@
     display: none;
   }
 
-  #name-f{
+  #name-f {
     display: none;
   }
 
-  #name-l{
+  #name-l {
     display: none;
   }
 
@@ -27,7 +27,7 @@
     display: none;
   }
 
-  .grid-3 {
+  .grid-3-desktop {
     display: none;
   }
 
@@ -96,7 +96,6 @@
   }
 
   .section-1 {
-
     justify-content: start;
     width: 100%;
     background-color: #1c1a19;
@@ -160,7 +159,6 @@
   }
 
   .img-1 {
-    
     margin-top: -235px;
   }
 
@@ -630,10 +628,9 @@
   }
 }
 
-  /* Desktop-desing */
+/* Desktop-desing */
 
-@media only screen and (min-width: 768px){
-
+@media only screen and (min-width: 768px) {
   .nav {
     display: none;
   }
@@ -643,6 +640,10 @@
   }
 
   .section-3 {
+    display: none;
+  }
+
+  .grid-3-movile {
     display: none;
   }
 
@@ -686,7 +687,7 @@
     font-size: 20px;
   }
 
-  .menu-desk{
+  .menu-desk {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -706,7 +707,7 @@
 
   /* First section of the web */
 
-  .main{
+  .main {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -730,10 +731,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     width: 50%;
     background-color: #1c1a19;
-    margin-left: -10px; 
+    margin-left: -10px;
   }
 
   .h-1 {
@@ -748,7 +749,7 @@
     font-weight: 400;
     font-size: 72px;
   }
-  
+
   .h-2 {
     position: relative;
     color: #fff5e1;
@@ -798,6 +799,12 @@
     position: relative;
     left: 15px;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-self: end;
+    float: right;
+    flex-grow: 0;
   }
 
   /* -- finish of the header-- */
@@ -818,16 +825,16 @@
     color: black;
   }
 
- /* -- grid configure -- */
+  /* -- grid configure -- */
 
- .grid-1 {
+  .grid-1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
- }
+  }
 
   /* -- second tittle -- */
 
@@ -852,7 +859,7 @@
     border-width: 0 0 1px 0;
   }
 
-  .grid-2{
+  .grid-2 {
     display: grid;
     grid-template-columns: 684px 448px;
     grid-template-rows: repeat(4, 1fr);
@@ -878,7 +885,7 @@
   }
 
   .header-3 {
-    grid-columns: 2/3;
+    grid-column: 2/3;
     grid-row: 2/3;
     color: #091e42;
     width: 327px;
@@ -892,7 +899,7 @@
   /* -- add style to my second paragraph -- */
 
   .para-2 {
-    grid-columns: 2/3;
+    grid-column: 2/3;
     grid-row: 2/3;
     margin-top: -5px;
     width: 448px;
@@ -906,7 +913,7 @@
   /* -- add style and flexbox to my tech-stack class -- */
 
   .tech-stack {
-    grid-columns: 2/3;
+    grid-column: 2/3;
     grid-row: 2/3;
     width: 327px;
     display: flex;
@@ -916,7 +923,7 @@
     font-size: 15px;
     font-family: "Inter", sans-serif;
   }
-  
+
   /* -- add style to the botton -- */
 
   .button {
@@ -963,10 +970,11 @@
     border: 1px solid #8993a4;
   }
 
-  /* -- adding grid for projects --*/
+  /* -- adding grid for projects -- */
+
   /* ---  add other projects   --- */
 
-  .grid-3 {
+  .grid-3-desktop {
     width: 369px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -976,7 +984,7 @@
     padding-bottom: 130px;
   }
 
-  /* -- disable buttons --*/
+  /* -- disable buttons -- */
 
   .button-2-desk {
     display: none;
@@ -1138,15 +1146,6 @@
     top: -52px;
   }
 
-  .div-img-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-self: end;
-    float: right;
-    flex-grow: 0;
-  }
-
   .img-3 {
     display: none;
   }
@@ -1206,7 +1205,6 @@
     text-align: center;
     grid-column: 1;
     grid-row: 1;
-
   }
 
   .coloumn-2 {
@@ -1245,7 +1243,7 @@
     bottom: -120px;
   }
 
-  .coloumn-3-1 {    
+  .coloumn-3-1 {
     display: flex;
     flex-direction: column;
     grid-column: 3;
