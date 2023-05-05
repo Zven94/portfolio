@@ -21,10 +21,24 @@
     <!-- my header with a navegation menu. Contains my logo and my "burger" menu button -->
 
     <header class="header">
+        <nav class="nav-desktop">
+            <div class="my-logo"><h1 >My logo</h1></div>
+
+            <!-- menu: Porfolio, About, Contact (for desktop) -->
+
+            <nav class="menu-desk">
+                <ul class="list-desk">
+                    <li><a href="" class="porfolio-desk">Porfolio</a></li>
+                    <li><a href="" class="about-desk"></a>About</li>
+                    <li><a href="" class="contact-desk"></a>Contact</li>
+                </ul>
+                <a href="" class="mail-desk"><img src="/images/mail.png" alt="mail-desk"></a>
+            </nav>
+        </nav>
         <nav class="nav">
             <div class="my-logo"><h1 >My logo</h1></div>
 
-            <!-- import my burger menu from Font Awsome-->
+            <!-- import my burger menu from Font Awsome (for movile)-->
 
             <nav class="burger-menu">
                 <i class="fa-solid fa-bars"></i>
@@ -35,59 +49,190 @@
     <!-- main content on my web -->
 
     <main class="main">
-        <section class="section-1">
-            <h1 class="h-1">Hi there.<br>I'm Nico.</h1>
-            <h2 class="h-2">I'm a Sofware Developer</h2>
-            <p class="para-1">I can help you build a product,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hesitate to contact me.</p>
+        <div class="section-1-1">
+            <section class="section-1">
+                <h1 class="h-1" class="column-2">Hi there.<br>I'm Nico.</h1>
+                <h2 class="h-2" class="column-2">I'm a Sofware Developer</h2>
+                <p class="para-1" class="column-2">I can help you build a product,
+                    feature or website Look through some of my work and experience!
+                    If you like what you see and have a project you need coded,
+                    don’t hesitate to contact me.</p>
 
-            <!-- social medias into <ul> -->
+                <!-- social medias into <ul> -->
                 
-            <ul class="social-media">
-                <li><a href="" class="sm githubcat"><img src="GitHubcat.png" alt="My itHubcat"></a></li>
-                <li><a href="" class="sm linkedin"><img src="Linkedin.png" alt="My Linkedin"></a></li>
-                <li><a href="" class="sm angellist"><img src="Angellist.png" alt="My Angellist"></a></li>
-                <li><a href="" class="sm twitter"><img src="Twitter.png" alt="My Twitter"></a></li>
-                <li><a href="" class="sm medium"><img src="Medium.png" alt="My Medium"></a></li>
-            </ul>
+                <ul class="social-media">
+                    <li><a href="" class="sm githubcat"><img src="GitHubcat.png" alt="My itHubcat"></a></li>
+                    <li><a href="" class="sm linkedin"><img src="Linkedin.png" alt="My Linkedin"></a></li>
+                    <li><a href="" class="sm angellist"><img src="Angellist.png" alt="My Angellist"></a></li>
+                    <li><a href="" class="sm twitter"><img src="Twitter.png" alt="My Twitter"></a></li>
+                    <li><a href="" class="sm medium"><img src="Medium.png" alt="My Medium"></a></li>
+                </ul>
+            </section>
+                  <!-- background img -->
+        <section  class="div-img-3">
+            <img src="images/background-desktop-1.png" alt="" class="background-desktop-1">
+            <img src="Illustration.png" alt="" class="img-1">            
         </section>
 
-         <!-- background img -->
-        <section  class="div-img-3">
-            <img src="Illustration.png" alt="" class="img-1">
-            
-        </section> 
+        </div>
 
         <!-- end of the first page ----------->
         <!-- --------------------------------->
         <!-- Add h2,img,p,h4 and button------->
 
         <section class="section-2">
-            <h2 class="header-2">My Recent Works</h2>
-            <hr class="my-separator">
-            <img src="img-1.png" alt="My first work" class="img-2">
+            <div class="grid-1">
+                
+                    <h2 class="header-2">My Recent Works</h2>
+                    <hr class="my-separator">
+                
+            </div>
 
             <!-- add div for header and paragraph -->
+            
+            <div class="grid-2">
+                <div>
+                    <img src="img-1.png" alt="My first work" class="img-2">
+                </div>
+                <div class="column-2">
+                    <h2 class="header-3">Multi-Post Stories</h2>
+                    <p class="para-2">A daily selection of privately personalized reads;
+                        no accounts or sign-ups required. has been the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a 
+                        standard dummy text.</p>
 
-            <div class="div-3">
-                <h2 class="header-3">Multi-Post Stories</h2>
-                <p class="para-2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                                    <!-- add div for h4 -->
+
+                    <div class="tech-stack  column-2">
+                        <h4 class="h4-1">CSS</h4>
+                        <h4 class="h4-2">HTML</h4>
+                        <h4 class="h4-3">Bootstrap</h4>
+                        <h4 class="h4-4">Ruby</h4>
+                    </div>
+                    <button class="button" type="submit">See Projects</button>
+                </div>
             </div>
-
-            <!-- add div for h4 -->
-
-            <div class="tech-stack">
-                <h4 class="h4-1">CSS</h4>
-                <h4 class="h4-2">HTML</h4>
-                <h4 class="h4-3">Bootstrap</h4>
-                <h4 class="h4-4">Ruby</h4>
-            </div>
-            <button class="button" type="submit">See Projects</button>
         </section>
 
         <!-- my-works 1/6-->
+
+        <div class="grid-3">
+            <section class="section-3">     
+                    <img src="project-example.png" alt="work example" class="img-w1">
+                <div class="div-4">
+                    <h2 class="header-4">Profesional Art Printing Data</h2>
+                    <p class="para-3">A daily selection of privately personalized 
+                        reads; no accounts or sign-ups required. 
+                        Has been the industry's standard.</p>
+                </div>
+                <div class="tech-stack-2">
+                    <h4 class="h4-5">HTML</h4>
+                    <h4 class="h4-6">Bootstrap</h4>
+                    <h4 class="h4-7">Ruby</h4>
+                </div>
+                <button class="button-2" type="submit">See Projects</button>
+            </section>
+
+            <section class="sec section-3-desktop">     
+                    <img src="images/img-placeholder.png" alt="work example" class="img-w1">
+                <button class="button-2" type="submit">See Projects</button>
+            </section>
+
+            <!-- my-works 2/6-->
+
+            <section class="sec section-3">
+                <img src="project-example.png" alt="work example" class="img-w1">
+                <div class="div-4">
+                    <h2 class="header-4">Profesional Art Printing Data</h2>
+                    <p class="para-3">A daily selection of privately personalized 
+                        reads; no accounts or sign-ups required. 
+                        Has been the industry's standard.</p>
+                </div>
+                <div class="tech-stack-2">
+                    <h4 class="h4-5">HTML</h4>
+                    <h4 class="h4-6">Bootstrap</h4>
+                    <h4 class="h4-7">Ruby</h4>
+                </div>
+                <button class="button-2 button-2-desk" type="submit">See Projects</button>
+            </section>
+
+            <!-- my-works 3/6-->
+
+            <section class="sec section-3">
+                <img src="project-example.png" alt="work example" class="img-w1">
+                <div class="div-4">
+                    <h2 class="header-4">Profesional Art Printing Data</h2>
+                    <p class="para-3">A daily selection of privately personalized 
+                        reads; no accounts or sign-ups required. 
+                        Has been the industry's standard.</p>
+                </div>
+                <div class="tech-stack-2">
+                    <h4 class="h4-5">HTML</h4>
+                    <h4 class="h4-6">Bootstrap</h4>
+                    <h4 class="h4-7">Ruby</h4>
+                </div>
+                <button class="button-2 button-2-desk" type="submit">See Projects</button>
+            </section>
+           
+            <!-- my-works 4/6-->
+           
+            <section class="sec section-3">
+                <img src="project-example.png" alt="work example" class="img-w1">
+                <div class="div-4">
+                    <h2 class="header-4">Profesional Art Printing Data</h2>
+                    <p class="para-3">A daily selection of privately personalized 
+                        reads; no accounts or sign-ups required. 
+                        Has been the industry's standard.</p>
+                </div>
+                <div class="tech-stack-2">
+                    <h4 class="h4-5">HTML</h4>
+                    <h4 class="h4-6">Bootstrap</h4>
+                    <h4 class="h4-7">Ruby</h4>
+                </div>
+                <button class="button-2 button-2-desk" type="submit">See Projects</button>
+            </section>
+
+            <!-- my-works 5/6-->
+            
+            <section class="sec section-3">
+                <img src="project-example.png" alt="work example" class="img-w1">
+                <div class="div-4">
+                    <h2 class="header-4">Profesional Art Printing Data</h2>
+                    <p class="para-3">A daily selection of privately personalized 
+                        reads; no accounts or sign-ups required. 
+                        Has been the industry's standard.</p>
+                </div>
+                <div class="tech-stack-2">
+                    <h4 class="h4-5">HTML</h4>
+                    <h4 class="h4-6">Bootstrap</h4>
+                    <h4 class="h4-7">Ruby</h4>
+                </div>
+                <button class="button-2 button-2-desk" type="submit">See Projects</button>
+            </section>
+            
+            <!-- my-works 6/6-->
+            
+            <section class="sec section-3">
+                <img src="project-example.png" alt="work example" class="img-w1">
+                <div class="div-4">
+                    <h2 class="header-4">Profesional Art Printing Data</h2>
+                    <p class="para-3">A daily selection of privately personalized 
+                        reads; no accounts or sign-ups required. 
+                        Has been the industry's standard.</p>
+                </div>
+                <div class="tech-stack-2">
+                    <h4 class="h4-5">HTML</h4>
+                    <h4 class="h4-6">Bootstrap</h4>
+                    <h4 class="h4-7">Ruby</h4>
+                </div>
+                <div>
+                    <button class="button-2 button-2-desk" type="submit">See Projects</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- my-works 1/6 for desktop -->
+
         <section class="sec section-3">
             <img src="project-example.png" alt="work example" class="img-w1">
             <div class="div-4">
@@ -101,89 +246,103 @@
                 <h4 class="h4-6">Bootstrap</h4>
                 <h4 class="h4-7">Ruby</h4>
             </div>
-            <button class="button-2" type="submit">See Projects</button>
+            <button class="button-2 button-2-desk" type="submit">See Projects</button>
         </section>
-        <!-- my-works 2/6-->
-        <section class="sec section-3">
-            <img src="project-example.png" alt="work example" class="img-w1">
-            <div class="div-4">
-                <h2 class="header-4">Profesional Art Printing Data</h2>
-                <p class="para-3">A daily selection of privately personalized 
-                    reads; no accounts or sign-ups required. 
-                    Has been the industry's standard.</p>
-            </div>
-            <div class="tech-stack-2">
-                <h4 class="h4-5">HTML</h4>
-                <h4 class="h4-6">Bootstrap</h4>
-                <h4 class="h4-7">Ruby</h4>
-            </div>
-            <button class="button-2" type="submit">See Projects</button>
-        </section>
-        <!-- my-works 3/6-->
-        <section class="sec section-3">
-            <img src="project-example.png" alt="work example" class="img-w1">
-            <div class="div-4">
-                <h2 class="header-4">Profesional Art Printing Data</h2>
-                <p class="para-3">A daily selection of privately personalized 
-                    reads; no accounts or sign-ups required. 
-                    Has been the industry's standard.</p>
-            </div>
-            <div class="tech-stack-2">
-                <h4 class="h4-5">HTML</h4>
-                <h4 class="h4-6">Bootstrap</h4>
-                <h4 class="h4-7">Ruby</h4>
-            </div>
-            <button class="button-2" type="submit">See Projects</button>
-        </section>
-        <!-- my-works 4/6-->
-        <section class="sec section-3">
-            <img src="project-example.png" alt="work example" class="img-w1">
-            <div class="div-4">
-                <h2 class="header-4">Profesional Art Printing Data</h2>
-                <p class="para-3">A daily selection of privately personalized 
-                    reads; no accounts or sign-ups required. 
-                    Has been the industry's standard.</p>
-            </div>
-            <div class="tech-stack-2">
-                <h4 class="h4-5">HTML</h4>
-                <h4 class="h4-6">Bootstrap</h4>
-                <h4 class="h4-7">Ruby</h4>
-            </div>
-            <button class="button-2" type="submit">See Projects</button>
-        </section>
-        <!-- my-works 5/6-->
-        <section class="sec section-3">
-            <img src="project-example.png" alt="work example" class="img-w1">
-            <div class="div-4">
-                <h2 class="header-4">Profesional Art Printing Data</h2>
-                <p class="para-3">A daily selection of privately personalized 
-                    reads; no accounts or sign-ups required. 
-                    Has been the industry's standard.</p>
-            </div>
-            <div class="tech-stack-2">
-                <h4 class="h4-5">HTML</h4>
-                <h4 class="h4-6">Bootstrap</h4>
-                <h4 class="h4-7">Ruby</h4>
-            </div>
-            <button class="button-2" type="submit">See Projects</button>
-        </section>
-        <!-- my-works 6/6-->
-        <section class="sec section-3">
-            <img src="project-example.png" alt="work example" class="img-w1">
-            <div class="div-4">
-                <h2 class="header-4">Profesional Art Printing Data</h2>
-                <p class="para-3">A daily selection of privately personalized 
-                    reads; no accounts or sign-ups required. 
-                    Has been the industry's standard.</p>
-            </div>
-            <div class="tech-stack-2">
-                <h4 class="h4-5">HTML</h4>
-                <h4 class="h4-6">Bootstrap</h4>
-                <h4 class="h4-7">Ruby</h4>
-            </div>
-            <button class="button-2" type="submit">See Projects</button>
-        </section>
+
+    <!-- my-works 2/6-->
+
+    <section class="sec section-3">
+        <img src="project-example.png" alt="work example" class="img-w1">
+        <div class="div-4">
+            <h2 class="header-4">Profesional Art Printing Data</h2>
+            <p class="para-3">A daily selection of privately personalized 
+                reads; no accounts or sign-ups required. 
+                Has been the industry's standard.</p>
+        </div>
+        <div class="tech-stack-2">
+            <h4 class="h4-5">HTML</h4>
+            <h4 class="h4-6">Bootstrap</h4>
+            <h4 class="h4-7">Ruby</h4>
+        </div>
+        <button class="button-2 button-2-desk" type="submit">See Projects</button>
+    </section>
+
+    <!-- my-works 3/6-->
+
+    <section class="sec section-3">
+        <img src="project-example.png" alt="work example" class="img-w1">
+        <div class="div-4">
+            <h2 class="header-4">Profesional Art Printing Data</h2>
+            <p class="para-3">A daily selection of privately personalized 
+                reads; no accounts or sign-ups required. 
+                Has been the industry's standard.</p>
+        </div>
+        <div class="tech-stack-2">
+            <h4 class="h4-5">HTML</h4>
+            <h4 class="h4-6">Bootstrap</h4>
+            <h4 class="h4-7">Ruby</h4>
+        </div>
+        <button class="button-2 button-2-desk" type="submit">See Projects</button>
+    </section>
+   
+    <!-- my-works 4/6-->
+   
+    <section class="sec section-3">
+        <img src="project-example.png" alt="work example" class="img-w1">
+        <div class="div-4">
+            <h2 class="header-4">Profesional Art Printing Data</h2>
+            <p class="para-3">A daily selection of privately personalized 
+                reads; no accounts or sign-ups required. 
+                Has been the industry's standard.</p>
+        </div>
+        <div class="tech-stack-2">
+            <h4 class="h4-5">HTML</h4>
+            <h4 class="h4-6">Bootstrap</h4>
+            <h4 class="h4-7">Ruby</h4>
+        </div>
+        <button class="button-2 button-2-desk" type="submit">See Projects</button>
+    </section>
+
+    <!-- my-works 5/6-->
+    
+    <section class="sec section-3">
+        <img src="project-example.png" alt="work example" class="img-w1">
+        <div class="div-4">
+            <h2 class="header-4">Profesional Art Printing Data</h2>
+            <p class="para-3">A daily selection of privately personalized 
+                reads; no accounts or sign-ups required. 
+                Has been the industry's standard.</p>
+        </div>
+        <div class="tech-stack-2">
+            <h4 class="h4-5">HTML</h4>
+            <h4 class="h4-6">Bootstrap</h4>
+            <h4 class="h4-7">Ruby</h4>
+        </div>
+        <button class="button-2 button-2-desk" type="submit">See Projects</button>
+    </section>
+    
+    <!-- my-works 6/6-->
+    
+    <section class="sec section-3">
+        <img src="project-example.png" alt="work example" class="img-w1">
+        <div class="div-4">
+            <h2 class="header-4">Profesional Art Printing Data</h2>
+            <p class="para-3">A daily selection of privately personalized 
+                reads; no accounts or sign-ups required. 
+                Has been the industry's standard.</p>
+        </div>
+        <div class="tech-stack-2">
+            <h4 class="h4-5">HTML</h4>
+            <h4 class="h4-6">Bootstrap</h4>
+            <h4 class="h4-7">Ruby</h4>
+        </div>
+        <div>
+            <button class="button-2 button-2-desk" type="submit">See Projects</button>
+        </div>
+    </section>
+
         <!-- about me section -->
+        <div class="section-9-1">
         <section class="section-9">
             <h1 class="about-me">About me</h1>
             <p class="para-4">Hello I’m a software developer! I can help
@@ -194,46 +353,51 @@
                 don’t hesitate to contact me.</p>
             <button class="button-3" type="submit">Get my resume</button>
         </section>
+        
         <!-- background img-2 -->
+        
         <section  class="div-img">
-        <img src="Illustration-2.png" alt="" class="img-3">
-           </section>
-           
+            <img src="images/background-desktop-2.png" alt="" class="background-desktop-2">
+            <img src="Illustration-2.png" alt="" class="img-3">
+        </section>
+        </div>
         <!-- skill section -->   
         <section class="section-10">
                 <hr class="my-separator-2">
-                <div>
-                    <img src="rectangle-55.png" alt="rectangle" class="h5-img">
-                    <h5 class="h5">Languague</h5>
-                </div>
-                <div class="h6-1">
-                    <h6 class="h6">JavaScript</h6>
-                    <h6 class="h6">Ruby</h6>
-                    <h6 class="h6">HTML</h6>
-                    <h6 class="h6">CSS</h6>
-                </div>
-                <div>
-                    <img src="rectangle-56.png" alt="" class="h5-img">
-                    <h5 class="h5">Frameworks</h5>
-                </div>
-                <div class="h6-1">
-                    <h6 class="h6">React.js</h6>
-                    <h6 class="h6">Ruby on Rails</h6>
-                    <h6 class="h6">RSpec</h6>
-                    <h6 class="h6">Capybara</h6>
-                </div>
-                
-                <div>
-                    <img src="rectangle-57.png" alt="" class="h5-img">
-                    <h5 class="h5">Skills</h5>
-                </div>
-                <div class="h6-1">
-                    <h6 class="h6">Database Management</h6>
-                    <h6 class="h6">Version Control</h6>
-                    <h6 class="h6">CLI</h6>
-                    <h6 class="h6">API Desing</h6>
-                    <h6 class="h-last h6">Web Development</h6>
-                </div>
+                    <div class="skill">
+                        <div class="coloumn-1">
+                            <img src="rectangle-55.png" alt="" class="h5-img">
+                            <h5 class="h5">Languague</h5>
+                        </div>
+                        <div class="h6-1 coloumn-1-1">
+                            <h6 class="h6">JavaScript</h6>
+                            <h6 class="h6">Ruby</h6>
+                            <h6 class="h6">HTML</h6>
+                            <h6 class="h6">CSS</h6>
+                        </div>
+                        <div class="coloumn-2">
+                            <img src="rectangle-56.png" alt="" class="h5-img">
+                            <h5 class="h5">Frameworks</h5>
+                        </div>
+                        <div class="h6-1 coloumn-2-1">
+                            <h6 class="h6">React.js</h6>
+                            <h6 class="h6">Ruby on Rails</h6>
+                            <h6 class="h6">RSpec</h6>
+                            <h6 class="h6">Capybara</h6>
+                        </div>
+                        
+                        <div class="coloumn-3">
+                            <img src="rectangle-57.png" alt="" class="h5-img">
+                            <h5 class="h5">Skills</h5>
+                        </div>
+                        <div class="h6-1 coloumn-3-1">
+                            <h6 class="h6">Database Management</h6>
+                            <h6 class="h6">Version Control</h6>
+                            <h6 class="h6">CLI</h6>
+                            <h6 class="h6">API Desing</h6>
+                            <h6 class="h-last h6">Web Development</h6>
+                        </div>
+                    </div>
         </section>
         <!-- Added form on the last page-->
         <section class="section-11">
@@ -242,6 +406,10 @@
                 please get in touch.</h5>
                 <form action="https://formspree.io/f/xayzvjyw" method="post" class="form">
                     <input type="text" name="full_name" id="name" placeholder="Full name" required
+                    maxlength="30">
+                    <input type="text" name="full_name" id="name-f" placeholder="First name" required
+                    maxlength="30">
+                    <input type="text" name="full_name" id="name-l" placeholder="Last name" required
                     maxlength="30">
                     <hr class="my-separator-3">
                     <input type="email" name="email" id="email" placeholder="Email adress" required>
