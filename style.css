@@ -709,6 +709,23 @@
     display: none;
   }
 
+  .mail-desk:hover {
+    animation: rotating 1s linear infinite;
+    display: inline-block;
+  }
+
+  @keyframes rotating {
+    0% {
+      transform: rotate(-15deg) scale(1);
+    }
+    50% {
+      transform: rotate(15deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(-15deg) scale(1);
+    }
+  }
+
   /* My body config */
 
   .body {
@@ -999,6 +1016,12 @@
     height: 48px;
     border: 1px solid #ff6b00;
     float: left;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
   }
 
   /* -- add style to all my h4  -- */
@@ -1211,6 +1234,12 @@
     height: 48px;
     border: 1px solid #ff6b00;
     top: -52px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .button-3:hover {
+    transform: scale(1.1);
   }
 
   .img-3 {
