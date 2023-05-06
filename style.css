@@ -33,7 +33,6 @@
 
   body {
     margin: 0;
-    padding: 0;
     background: white;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -57,6 +56,7 @@
   .nav {
     z-index: 100;
     top: 0;
+    left: 0;
     margin-bottom: -100px;
     width: 100%;
     position: fixed;
@@ -68,6 +68,7 @@
 
   .my-logo {
     margin-left: 24px;
+    font-size: 18px;
   }
 
   .burger-menu {
@@ -85,20 +86,25 @@
   }
 
   .section-1-1 {
+    z-index: 2;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #1c1a19;
     margin-top: -10px;
-    padding-right: 16px;
     padding-bottom: 80px;
+    background-image: url(images/Illustration.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
   }
 
   .section-1 {
-    justify-content: start;
-    width: 100%;
-    background-color: #1c1a19;
+    position: relative;
+    left: 0px;
+    justify-content: center;
+    width: auto;
   }
 
   /* initialize the .h,h-1,h-2,h-3: sizes, colors, and fonts */
@@ -168,6 +174,23 @@
 
   /* -- add style and flexbox -- */
 
+  .first-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1px;
+    padding-bottom: 125px;
+    height: 682px;
+    margin-top: 100px;
+    color: black;
+    width: 100%;
+    align-items: center;
+  }
+
+  .grid-3-movile {
+    width: 100%;
+  }
+
   .section-2 {
     display: flex;
     flex-direction: column;
@@ -175,9 +198,17 @@
     padding-top: 1px;
     padding-bottom: 125px;
     height: 682px;
-    margin-left: 24px;
     margin-top: 100px;
     color: black;
+    width: 100%;
+  }
+
+  .grid-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   /* -- second tittle -- */
@@ -188,7 +219,7 @@
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 40px;
     color: #1c1a19;
   }
 
@@ -197,7 +228,7 @@
   .my-separator {
     width: 327px;
     top: 107px;
-    margin-right: 50px;
+    margin: 0;
     height: 1px;
     border-style: solid;
     border-color: black;
@@ -293,11 +324,11 @@
   /* -- add other projects -- */
 
   .sec {
-    margin: 24px 24px 0 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
+    align-items: center;
     flex-grow: 0;
   }
 
@@ -318,20 +349,20 @@
   .header-4 {
     color: white;
     font-family: 'Crete Round', sans-serif;
-    position: absolute;
+    position: relative;
     width: 295px;
     font-size: 32px;
-    bottom: 35px;
+    bottom: 80px;
     left: 13px;
   }
 
   .para-3 {
     color: white;
     font-family: 'Inter', sans-serif;
-    position: absolute;
+    position: relative;
     width: 280px;
     font-size: 16px;
-    top: -60px;
+    top: -110px;
     left: 13px;
   }
 
@@ -339,9 +370,9 @@
     color: white;
     width: 247px;
     display: flex;
-    bottom: 97px;
-    left: 13px;
-    position: absolute;
+    bottom: 130px;
+    left: -10px;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -380,14 +411,18 @@
     color: white;
     background-color: #ff6b00;
     padding: 10px 12px;
-    width: 100%;
+    width: 327px;
     height: 48px;
     border: 1px solid #ff6b00;
+    position: relative;
+    top: -128px;
   }
 
   .about-me {
     width: 327px;
     height: 79px;
+    position: relative;
+    left: 20px;
     color: #ff6b00;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -396,23 +431,39 @@
     margin-top: 120px;
   }
 
+  .section-9-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #1c1a19;
+  }
+
   .section-9 {
     position: relative;
-    padding-left: 24px;
     margin-top: 130px;
     width: 100%;
     background-color: #1c1a19;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stcenterart;
+    background-image: url(images/Illustration-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
   }
 
   .para-4 {
     position: relative;
     top: -50px;
+    left: 24px;
     color: white;
     width: 327px;
     height: 148px;
+    display: flex;
+    text-align: left;
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -424,6 +475,7 @@
   .button-3 {
     position: relative;
     top: -38px;
+    left: 24px;
     color: white;
     background-color: #ff6b00;
     padding: 10px 12px;
@@ -466,8 +518,7 @@
     position: relative;
     width: 327px;
     top: 10px;
-    left: 24px;
-    margin-right: 50px;
+    margin: 0px;
     height: 1px;
     border-style: solid;
     border-color: white;
@@ -479,7 +530,9 @@
     position: relative;
     top: 50px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: white;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
@@ -488,8 +541,13 @@
   .h5-img {
     margin: 10px;
     position: relative;
-    right: 15px;
+    right: 10px;
     top: 130px;
+  }
+
+  .Skill-img {
+    position: relative;
+    left: 50px;
   }
 
   .h6 {
@@ -506,7 +564,7 @@
     height: 192;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
   }
 
   .h-last {
@@ -514,8 +572,8 @@
   }
 
   .section-11 {
+    width: 100%;
     display: flex;
-    margin-left: 24px;
     flex-direction: column;
     justify-self: center;
     align-items: center;
@@ -530,6 +588,7 @@
   }
 
   .h5-2 {
+    text-align: center;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     line-height: 44px;
@@ -623,7 +682,7 @@
   .footer {
     display: flex;
     width: 327px;
-    padding: 28px;
+    padding-bottom: 28px;
     justify-content: center;
   }
 }
@@ -632,6 +691,10 @@
 
 @media only screen and (min-width: 768px) {
   .nav {
+    display: none;
+  }
+
+  .burger-menu {
     display: none;
   }
 
@@ -664,27 +727,28 @@
 
   .header {
     position: relative;
-    top: -8px;
+    top: -10px;
     right: 8px;
     color: black;
-    height: 72px;
   }
 
   .nav-desktop {
-    width: 1440px;
-    z-index: 100;
+    width: 100%;
+    height: 72px;
+    z-index: 10;
     position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #3c3a39;
     color: white;
     font-family: "Inter", sans-serif;
   }
 
-  .my-logo {
-    font-size: 20px;
+  .my-logo-desktop {
+    font-size: 18px;
+    margin-left: 135px;
   }
 
   .menu-desk {
@@ -694,6 +758,7 @@
     align-items: center;
     width: 315px;
     font-size: 15px;
+    margin-right: 165px;
   }
 
   .list-desk {
@@ -723,6 +788,8 @@
     background-color: #1c1a19;
     margin-top: -10px;
     padding-right: 16px;
+    padding-bottom: 118px;
+    
   }
 
   .section-1 {
@@ -859,7 +926,7 @@
     border-width: 0 0 1px 0;
   }
 
-  .grid-2 {
+  .first-work {
     display: grid;
     grid-template-columns: 684px 448px;
     grid-template-rows: repeat(4, 1fr);
@@ -1111,13 +1178,14 @@
     text-align: center;
     background-color: #1c1a19;
     margin-left: -10px;
-    padding-right: 25px;
+    padding-right: 30px;
   }
 
   .section-9 {
     margin-left: 100px;
     display: flex;
     flex-direction: column;
+    background-color: #1c1a19;
   }
 
   .para-4 {
@@ -1155,10 +1223,11 @@
   }
 
   .background-desktop-2 {
-    position: static;
+    position: relative;
     background-color: #1c1a19;
     width: 673px;
     height: 353px;
+    left: 25px;
   }
 
   .section-10 {
@@ -1166,7 +1235,7 @@
     bottom: 5px;
     width: 100%;
     height: 813px;
-    padding-right: 15px;
+    padding-right: 5px;
     padding-left: 15px;
     background-color: #1c1a19;
     display: flex;
@@ -1413,7 +1482,6 @@
   .footer {
     display: flex;
     width: 100%;
-    padding: 28px;
     justify-content: center;
     align-items: center;
   }
