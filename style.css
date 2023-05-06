@@ -718,9 +718,11 @@
     0% {
       transform: rotate(-15deg) scale(1);
     }
+
     50% {
       transform: rotate(15deg) scale(1.2);
     }
+
     100% {
       transform: rotate(-15deg) scale(1);
     }
