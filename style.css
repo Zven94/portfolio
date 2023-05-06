@@ -788,6 +788,9 @@
     margin-top: -10px;
     padding-right: 16px;
     padding-bottom: 118px;
+    background-image: url(images/background-desktop-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
   }
 
   .section-1 {
@@ -1178,6 +1181,9 @@
     background-color: #1c1a19;
     margin-left: -10px;
     padding-right: 30px;
+    background-image: url(images/background-desktop-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
   }
 
   .section-9 {
@@ -1380,28 +1386,13 @@
   }
 
   #name {
-    display: none;
-  }
-
-  #name-f {
     color: #979493;
     width: 298px;
     margin-bottom: 14px;
     border: none;
     outline: none;
     position: relative;
-    top: 41px;
-  }
-
-  #name-l {
-    color: #979493;
-    width: 298px;
-    margin-bottom: 14px;
-    border: none;
-    outline: none;
-    position: relative;
-    left: 200px;
-    top: 11px;
+    top: 8px;
   }
 
   #email {
