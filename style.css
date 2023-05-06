@@ -102,7 +102,6 @@
 
   .section-1 {
     position: relative;
-    left: 0px;
     justify-content: center;
     width: auto;
   }
@@ -181,7 +180,7 @@
     padding-top: 1px;
     padding-bottom: 125px;
     height: 682px;
-    margin-top: 100px;
+    margin-top: 80px;
     color: black;
     width: 100%;
     align-items: center;
@@ -440,6 +439,7 @@
     align-items: center;
     text-align: center;
     background-color: #1c1a19;
+    margin-top: 120px;
   }
 
   .section-9 {
@@ -519,7 +519,6 @@
     position: relative;
     width: 327px;
     top: 22px;
-    margin: 0px;
     height: 1px;
     border-style: solid;
     border-color: white;
@@ -593,7 +592,6 @@
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     line-height: 44px;
-    text-align: center;
     width: 327px;
     height: 216px;
     color: #172b4d;
@@ -790,7 +788,6 @@
     margin-top: -10px;
     padding-right: 16px;
     padding-bottom: 118px;
-    
   }
 
   .section-1 {
@@ -1364,8 +1361,7 @@
     display: flex;
     flex-direction: column;
     justify-self: center;
-    align-items: left
-    ;
+    align-items: left;
     flex-grow: 0;
     margin-top: 100px;
   }
