@@ -23,9 +23,16 @@ const burgerBtn = document.querySelector('#burgerBtn');
 const exitButton = document.getElementById('exitButton');
 console.log("burgerBtn");
 const burgerMenuAnchor = document.getElementById('burgerMenu').querySelectorAll('a');
-console.log("burgerMenu");
+console.log("burgerMenuAnchor = ", burgerMenuAnchor);
 
 burgerBtn.addEventListener('click', displayBugerMenu);
 exitButton.addEventListener('click', exitBurguerMenu);
+
+//add even listeners to each anchor witin burguer menu;
+for(let i = 0; i<burgerMenuAnchor.length; i++){
+  console.log(burgerMenuAnchor[i]);
+  burgerMenuAnchor[i].addEventListener('click', exitBurguerMenu);
+}
+
 
   
