@@ -31,6 +31,10 @@
     display: none;
   }
 
+  #burgerMenu {
+    display: none;
+  }
+
   body {
     margin: 0;
     background: white;
@@ -71,7 +75,7 @@
     font-size: 18px;
   }
 
-  .burger-menu {
+  .movileMenuContainer {
     font-size: 30px;
     margin: 10px 35px 10px 10px;
   }
@@ -693,7 +697,7 @@
     display: none;
   }
 
-  .burger-menu {
+  .movileMenuContainer {
     display: none;
   }
 

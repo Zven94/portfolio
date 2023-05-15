@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Inter+Tight:ital@1&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <!-- link to my burger icon -->
-    <script src="https://kit.fontawesome.com/8f4917926e.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
 </head>
 
 
@@ -28,9 +28,9 @@
 
             <nav class="menu-desk">
                 <ul class="list-desk">
-                    <li><a href="" class="porfolio-desk"></a>Porfolio</li>
-                    <li><a href="" class="about-desk"></a>About</li>
-                    <li><a href="" class="contact-desk"></a>Contact</li>
+                    <li><a href="#" class="porfolio-desk"></a>Porfolio</li>
+                    <li><a href="#" class="about-desk"></a>About</li>
+                    <li><a href="#" class="contact-desk"></a>Contact</li>
                 </ul>
                 <a href="" class="mail-desk"><img src="images/mail.png" alt="mail-desk"></a>
             </nav>
@@ -40,8 +40,15 @@
 
             <!-- import my burger menu from Font Awsome (for movile)-->
 
-            <nav class="burger-menu">
-                <i class="fa-solid fa-bars"></i>
+            <nav class="movileMenuContainer">
+                <a href="#" id="burgerBtn">
+                    <img src="images/burger.png" alt="" >
+                </a>
+                <ul id="burgerMenu">
+                    <li><a href="" class="porfolio-desk"></a>Porfolio</li>
+                    <li><a href="" class="about-desk"></a>About</li>
+                    <li><a href="" class="contact-desk"></a>Contact</li> 
+                </ul>
             </nav>
         </nav>
     </header>
