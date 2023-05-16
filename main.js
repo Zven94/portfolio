@@ -1,7 +1,13 @@
+/*  variables creation  */
+
 const burgerBtn = document.querySelector('#burgerBtn');
 const myLogo = document.querySelector('.my-logo');
 const exitButton = document.getElementById('exitButton');
 const burgerMenuAnchor = document.getElementById('burgerMenu').querySelectorAll('a');
+
+const seeProjectsBtn = document.getElementById('seeProjectsBtn')
+
+/*  functions for buttons */
 
 function displayBugerMenu() {
   const burgerMenu = document.getElementById('burgerMenu');
@@ -27,8 +33,23 @@ function exitBurguerMenu() {
   }
 }
 
+function displayPopUp(){
+  const contPopUp = document.getElementById('contPopUp');
+  const popUpDisplay = window.getComputedStyle(contPopUp).display;
+  if (popUpDisplay === 'none') {
+    contPopUp.style.display = 'block';
+/*    burgerBtn.style.display = 'none'; */
+  } else {
+    contPopUp.style.display = 'none';
+/*    burgerBtn.style.display = 'none'; */
+  }
+}
+
+
+
 burgerBtn.addEventListener('click', displayBugerMenu);
 exitButton.addEventListener('click', exitBurguerMenu);
+seeProjectsBtn.addEventListener('click', displayPopUp);
 
 // add even listeners to each anchor witin burguer menu;
 

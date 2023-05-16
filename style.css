@@ -254,7 +254,7 @@
 
   .contPopUp {
     z-index: 10;
-    display: block;
+    display: none;
     position: fixed;
     color: red;
     width: 100vw;
