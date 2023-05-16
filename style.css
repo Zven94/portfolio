@@ -36,7 +36,7 @@
     padding: 0;
     width: 100vw;
     height: 755px;
-    background-color: #3C3A39;
+    background-color: #3c3a39;
   }
 
   .burgerMenuStyle {
@@ -61,21 +61,21 @@
   .porfolio-desk {
     position: relative;
     right: 100px;
-    color: #FFF5E1;
+    color: #fff5e1;
     text-decoration: none;
   }
 
   .about-desk {
     position: relative;
     right: 110px;
-    color: #FFF5E1;
+    color: #fff5e1;
     text-decoration: none;
   }
 
   .contact-desk {
     position: relative;
     right: 100px;
-    color: #FFF5E1;
+    color: #fff5e1;
     text-decoration: none;
   }
 
