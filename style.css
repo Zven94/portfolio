@@ -256,10 +256,22 @@
     z-index: 10;
     display: none;
     position: fixed;
+    padding: 10%;
     color: red;
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
     backdrop-filter: blur(5px);
+  }
+
+  .contentPopUp {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    padding: 10%;
+    box-sizing: border-box;
   }
 
   .section-2 {
