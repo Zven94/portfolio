@@ -46,10 +46,23 @@
     align-items: center;
     justify-content: space-between;
     height: 240px;
+    width: inherit;
+    
+  }
+
+  .listBurgerStyle {
+    
+    color: #fff5e1;
+    border-bottom: #6f6c6b solid 1px;
+    width: 85%;
+  }
+
+  .exitBurgerStyleContainer {
+    text-align: end;
+    width: 85%;
   }
 
   #exitButton {
-    position: relative;
     left: 150px;
     background-color: transparent;
     background-image: url(images/exit.png);
@@ -58,24 +71,23 @@
     border: none;
   }
 
-  .porfolio-desk {
-    position: relative;
-    right: 100px;
+  a:visited {
     color: #fff5e1;
+  }
+
+  .porfolio-desk {
+    position: relative;    
+    
     text-decoration: none;
   }
 
   .about-desk {
     position: relative;
-    right: 110px;
-    color: #fff5e1;
     text-decoration: none;
   }
 
   .contact-desk {
     position: relative;
-    right: 100px;
-    color: #fff5e1;
     text-decoration: none;
   }
 
@@ -121,7 +133,7 @@
 
   .movileMenuContainer {
     font-size: 30px;
-    margin: 10px 35px 10px 10px;
+    margin: 10px 35px 10px 0px;
   }
 
   /* initialize the .main and use flexbox for all his childs */
