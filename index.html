@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Inter+Tight:ital@1&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <!-- link to my burger icon -->
-    <script src="https://kit.fontawesome.com/8f4917926e.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
 </head>
 
 
@@ -28,9 +28,9 @@
 
             <nav class="menu-desk">
                 <ul class="list-desk">
-                    <li><a href="" class="porfolio-desk"></a>Porfolio</li>
-                    <li><a href="" class="about-desk"></a>About</li>
-                    <li><a href="" class="contact-desk"></a>Contact</li>
+                    <li><a href="#" class="porfolio-desk"></a>Porfolio</li>
+                    <li><a href="#" class="about-desk"></a>About</li>
+                    <li><a href="#" class="contact-desk"></a>Contact</li>
                 </ul>
                 <a href="" class="mail-desk"><img src="images/mail.png" alt="mail-desk"></a>
             </nav>
@@ -40,8 +40,21 @@
 
             <!-- import my burger menu from Font Awsome (for movile)-->
 
-            <nav class="burger-menu">
-                <i class="fa-solid fa-bars"></i>
+            <nav class="movileMenuContainer">
+                <a href="#" id="burgerBtn">
+                    <img src="images/burger.png" alt="" >
+                </a>
+                <ul id="burgerMenu">
+                    <div class="burgerMenuStyle">
+                        <li> <button id="exitButton"></button></li>
+                        <li><a href="#Portfolio" class="porfolio-desk">Porfolio</a></li>
+                        <hr class="my-separator-w">
+                        <li><a href="#aboutMe" class="about-desk">About</a></li>
+                        <hr class="my-separator-w">
+                        <li><a href="#contactMe" class="contact-desk">Contact</a></li>
+                        <hr class="my-separator-w">
+                    </div>
+                </ul>
             </nav>
         </nav>
     </header>
@@ -74,12 +87,10 @@
         <!-- --------------------------------->
         <!-- Add h2,img,p,h4 and button------->
 
-        <section class="section-2">
+        <section class="section-2" id="Portfolio">
             <div class="grid-1">
-                
                     <h2 class="header-2">My Recent Works</h2>
                     <hr class="my-separator">
-                
             </div>
 
             <!-- add div for header and paragraph -->
@@ -316,7 +327,7 @@
     </div>  
         <!-- about me section -->
         <div class="section-9-1">
-            <section class="section-9">
+            <section class="section-9" id="aboutMe">
                 <h1 class="about-me">About me</h1>
                 <p class="para-4">Hello I’m a software developer! I can help
                     you build a product, feature or website
@@ -326,12 +337,6 @@
                     don’t hesitate to contact me.</p>
                 <button class="button-3" type="submit">Get my resume</button>
             </section>
-        
-        <!-- background img-2 -->
-        
-        <section  class="div-img">
-        <!--    <img src="images/background-desktop-2.png" alt="" class="background-desktop-2"> -->
-        </section>
         </div>
         <!-- skill section -->   
         <section class="section-10">
@@ -372,7 +377,7 @@
                     </div>
         </section>
         <!-- Added form on the last page-->
-        <section class="section-11">
+        <section class="section-11" id="contactMe">
                 <h5 class="h5-2">I'm always interested in hearing 
                 about new projects, so if you'd like to chat 
                 please get in touch.</h5>
