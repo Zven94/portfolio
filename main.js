@@ -6,6 +6,7 @@ const exitButton = document.getElementById('exitButton');
 const burgerMenuAnchor = document.getElementById('burgerMenu').querySelectorAll('a');
 
 const seeProjectsBtn = document.getElementById('seeProjectsBtn')
+const exitButtonPopup = document.getElementById('exitButton-popUp');
 
 /*  functions for buttons */
 
@@ -45,11 +46,25 @@ function displayPopUp(){
   }
 }
 
+function exitPopUp () {
+  const contPopUp = document.getElementById('contPopUp');
+  const popUpDisplay = window.getComputedStyle(contPopUp).display;
+  if (popUpDisplay === 'block') {
+    contPopUp.style.display = 'none';
+/*    burgerBtn.style.display = 'none'; */
+  } else {
+    contPopUp.style.display = 'none';
+/*    burgerBtn.style.display = 'none'; */
+  }
+}
+
 
 
 burgerBtn.addEventListener('click', displayBugerMenu);
 exitButton.addEventListener('click', exitBurguerMenu);
 seeProjectsBtn.addEventListener('click', displayPopUp);
+exitButtonPopup.addEventListener('click', exitPopUp);
+
 
 // add even listeners to each anchor witin burguer menu;
 
