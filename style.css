@@ -23,14 +23,6 @@
     display: none;
   }
 
-  .section-3-desktop {
-    display: none;
-  }
-
-  .grid-3-desktop {
-    display: none;
-  }
-
   .popUph2-d {
     display: none;
   }
@@ -250,7 +242,7 @@
     align-items: center;
   }
 
-  .grid-3-movile {
+  .projectCards {
     position: relative;
     width: 100%;
     top: 139px;
@@ -891,10 +883,6 @@
     display: none;
   }
 
-  .grid-3-movile {
-    display: none;
-  }
-
   .popUph2-m {
     display: none;
   }
@@ -1243,7 +1231,7 @@
 
   /* ---  add other projects   --- */
 
-  .grid-3-desktop {
+  .projectCards {
     width: 369px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1389,22 +1377,9 @@
 
   /* -- disable buttons -- */
 
-  .button-2-desk {
-    display: none;
-  }
-
-  .section-3-desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    flex-grow: 0;
-  }
-
   .button-2 {
     z-index: 1;
     position: relative;
-    top: -30px;
     color: white;
     background-color: #ff6b00;
     width: 369px;
@@ -1440,7 +1415,7 @@
     position: absolute;
     width: 295px;
     font-size: 32px;
-    bottom: -70px;
+    bottom: -40px;
     left: 13px;
   }
 
@@ -1450,15 +1425,16 @@
     position: absolute;
     width: 280px;
     font-size: 16px;
-    top: 41px;
+    top: 32px;
     left: 13px;
   }
 
   .tech-stack-2 {
+    list-style: none;
     color: white;
     width: 247px;
     display: flex;
-    bottom: 27px;
+    bottom: -5px;
     left: 13px;
     position: absolute;
     flex-direction: row;

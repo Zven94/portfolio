@@ -61,10 +61,10 @@ function exitPopUp () {
 function creatCardTemplate (i) {
   
  //------- set parent where create cards -----
-
+ const anchoPantalla = window.innerWidth;
  const contenedor = document.getElementById('projectCards');
-
-  //------- create div with a class "sec" -----
+ 
+ //------- create div with a class "sec" -----
 
   const divElement = document.createElement("div");
   divElement.classList.add('sec');
@@ -255,6 +255,5 @@ let myArr = [ new myCardTemplate (
 for (let i = 0; i < 6; i += 1) {
 
   //call function to create card
-
   creatCardTemplate(i)
 } 
