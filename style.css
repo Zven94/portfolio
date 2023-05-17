@@ -31,6 +31,10 @@
     display: none;
   }
 
+  .popUph2-d {
+    display: none;
+  }
+
   #burgerMenu {
     display: none;
     padding: 0;
@@ -287,6 +291,11 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+  }
+
+  .popUpImg {
+    width: 311px;
+    height: 221px;
   }
 
   .exitButton {
@@ -886,6 +895,10 @@
     display: none;
   }
 
+  .popUph2-m {
+    display: none;
+  }
+
   /* My body config */
 
   .body {
@@ -1197,6 +1210,7 @@
     width: 67px;
     height: 40px;
     border: 1px solid #8993a4;
+    margin-right: 10px;
   }
 
   .h4-3 {
@@ -1205,6 +1219,7 @@
     width: 95px;
     height: 40px;
     border: 1px solid #8993a4;
+    margin-right: 10px;
   }
 
   .h4-4 {
@@ -1213,6 +1228,15 @@
     width: 61px;
     height: 40px;
     border: 1px solid #8993a4;
+  }
+
+  .h4-4-5 {
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 122px;
+    height: 40px;
+    border: 1px solid #8993a4;
+    margin-right: 10px;
   }
 
   /* -- adding grid for projects -- */
@@ -1227,6 +1251,140 @@
     grid-gap: 24px;
     justify-content: center;
     padding-bottom: 130px;
+  }
+
+  /* -- style for popUp for desktop -- */
+
+  .contPopUp {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    padding: 5% 10% 5% 10%;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+  }
+
+  .popUp-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contentPopUp {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0% 5% 5% 5%;
+    box-sizing: border-box;
+  }
+
+  .popUp-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .popUph2-d {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .popUpImg {
+    width: 659px;
+    height: 448px;
+  }
+
+  .exitButton {
+    left: 150px;
+    background-color: transparent;
+    background-image: url(images/exit.png);
+    width: 24px;
+    height: 24px;
+    border: none;
+  }
+
+  .popUp-stack {
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: center;
+  }
+
+  .popUp-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .popUp-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .popUp-text {
+    width: 424px;
+    height: 336px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .popUp-btns {
+    width: 80%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  .button-Live {
+    font-size: 17px;
+    color: white;
+    background-color: #ff6b00;
+    padding: 10px 12px;
+    width: 129px;
+    height: 48px;
+    border: 1px solid #ff6b00;
+    text-align: start;
+  }
+
+  .button-Source {
+    font-size: 17px;
+    color: white;
+    background-color: #ff6b00;
+    padding: 10px 12px;
+    width: 158px;
+    height: 48px;
+    border: 1px solid #ff6b00;
+    text-align: start;
+  }
+
+  .img-btn {
+    z-index: 200;
+    width: 30px;
+    height: auto;
+    position: relative;
+    right: 30px;
   }
 
   /* -- disable buttons -- */

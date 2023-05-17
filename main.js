@@ -58,11 +58,11 @@ function exitPopUp () {
   }
 }
 
-function creatCardTemplate () {
-  console.log("Hi i'm in")
+function creatCardTemplate (i) {
+  
  //------- set parent where create cards -----
 
- const contenedor = document.getElementById("projectCards");
+ const contenedor = document.getElementById('projectCards');
 
   //------- create div with a class "sec" -----
 
@@ -74,8 +74,9 @@ function creatCardTemplate () {
 
   const imgElement = document.createElement("img");
   divElement.appendChild(imgElement);
-  imgElement.src = "images/project-example.png"
-  imgElement.classList.add("img-w1")
+  console.log(myArr[i]['imgFile']);
+  imgElement.src = myArr[i]['imgFile'];
+  imgElement.classList.add("img-w1");
 
   //------- create div 1 with a class "sec" -----
 
@@ -93,14 +94,14 @@ function creatCardTemplate () {
 
   const h2Element = document.createElement("h2");
   divElement1.appendChild(h2Element);
-  h2Element.textContent = "Profesional Art Printing Data";
+  h2Element.textContent = myArr[i]['h2'];
   h2Element.classList.add("header-4");
 
   //------- create p with a class "para-3" -----
 
   const pElement = document.createElement("p");
   divElement1.appendChild(pElement);
-  pElement.textContent = "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.";
+  pElement.textContent = myArr[i]['para'];
   pElement.classList.add("para-3")
 
   //------- create ul with a class "ulDiv" & li to it -----
@@ -116,26 +117,32 @@ function creatCardTemplate () {
   const liElement1 = document.createElement("li");
   ulElement.appendChild(liElement1);
   liElement1.classList.add("h4-5");
-  liElement1.textContent = "HTML";
+  liElement1.textContent = myArr[i]['stack1'];
 
   const liElement2 = document.createElement("li");
   ulElement.appendChild(liElement2);
   liElement2.classList.add("h4-6");
-  liElement2.textContent = "Bootstrap";
+  liElement2.textContent = myArr[i]['stack2'];
 
   const liElement3 = document.createElement("li");
   ulElement.appendChild(liElement3);
   liElement3.classList.add("h4-7");
-  liElement3.textContent = "Ruby";
+  liElement3.textContent = myArr[i]['stack3'];
 
   //------- create button with a class "button-2" -----
 
   const btnElement = document.createElement("button");
   divElement.appendChild(btnElement);
   btnElement.classList.add("button-2");
-  btnElement.textContent = "See project";
+  btnElement.textContent = myArr[i]['button'];
   btnElement.type = "sumit";
   btnElement.addEventListener('click', displayPopUp);
+/*
+  return {
+    pageNumber:page;
+    pageTitle: 
+
+  }*/
 }
 
 // ----------------  Event Listener -----------------------//
@@ -153,9 +160,101 @@ for (let i = 0; i < burgerMenuAnchor.length; i += 1) {
   burgerMenuAnchor[i].addEventListener('click', exitBurguerMenu);
 }
 
-// add project cards to html
+// constructor function
 
-for (let i = 1; i <= 6; i += 1) {
+function myCardTemplate(page,title,imgFile,h2,para,stack1,stack2,stack3,button) {
+  this.page = page;
+  this.title = title;
+  this.imgFile = imgFile;
+  this.h2 = h2;
+  this.para = para;
+  this.stack1 = stack1;
+  this.stack2 = stack2;
+  this.stack3 = stack3;
+  this.button = button;
+}
+
+// add project cards to html
+/*
+let  myCard = {
+  page: 0,
+  title: "projectCards",
+  imgFile: "images/project-example.png",
+  h2: "Profesional Art Printing Data",
+  para: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+  stack1: "HTML",
+  stack2: "Boostrap",
+  stack3: "Ruby",
+  button: "See project",
+};*/
+
+
+let myArr = [ new myCardTemplate (
+  1,
+  "projectCards",
+  "./images/project-example.png",
+  "Profesional Art Printing Data",
+  "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+  "HTML",
+  "Boostrap",
+  "Ruby",
+  "See project"),
+  new myCardTemplate (
+  2,
+  "projectCards",
+  "./images/project-example.png",
+  "Profesional Art Printing Data",
+  "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+  "HTML",
+  "Boostrap",
+  "Ruby",
+  "See project"),
+  new myCardTemplate (
+  3,
+  "projectCards",
+  "./images/project-example.png",
+  "Profesional Art Printing Data",
+  "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+  "HTML",
+  "Boostrap",
+  "Ruby",
+  "See project"),
+  new myCardTemplate (
+  4,  
+  "projectCards",
+  "./images/project-example.png",
+  "Profesional Art Printing Data",
+  "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+  "HTML",
+  "Boostrap",
+  "Ruby",
+  "See project"),
+  new myCardTemplate (
+  5,  
+  "projectCards",
+  "./images/project-example.png",
+  "Profesional Art Printing Data",
+  "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+  "HTML",
+  "Boostrap",
+  "Ruby",
+  "See project"),
+  new myCardTemplate (
+  6,  
+  "projectCards",
+  "./images/project-example.png",
+  "Profesional Art Printing Data",
+  "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+  "HTML",
+  "Boostrap",
+  "Ruby",
+  "See project")
+];
+
+
+for (let i = 0; i < 6; i += 1) {
+
   //call function to create card
-  creatCardTemplate()
+
+  creatCardTemplate(i)
 } 
