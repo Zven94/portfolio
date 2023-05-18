@@ -1,5 +1,9 @@
 /* @media give us the tool to creat a rule for an adaptative screen device */
 
+.error {
+  color: red;
+}
+
 @media only screen and (min-width: 375px) and (max-width: 768px) {
   /* My body config */
 
@@ -23,11 +27,7 @@
     display: none;
   }
 
-  .section-3-desktop {
-    display: none;
-  }
-
-  .grid-3-desktop {
+  .popUph2-d {
     display: none;
   }
 
@@ -46,10 +46,21 @@
     align-items: center;
     justify-content: space-between;
     height: 240px;
+    width: inherit;
+  }
+
+  .listBurgerStyle {
+    color: #fff5e1;
+    border-bottom: #6f6c6b solid 1px;
+    width: 85%;
+  }
+
+  .exitBurgerStyleContainer {
+    text-align: end;
+    width: 85%;
   }
 
   #exitButton {
-    position: relative;
     left: 150px;
     background-color: transparent;
     background-image: url(images/exit.png);
@@ -58,24 +69,22 @@
     border: none;
   }
 
+  a:visited {
+    color: #fff5e1;
+  }
+
   .porfolio-desk {
     position: relative;
-    right: 100px;
-    color: #fff5e1;
     text-decoration: none;
   }
 
   .about-desk {
     position: relative;
-    right: 110px;
-    color: #fff5e1;
     text-decoration: none;
   }
 
   .contact-desk {
     position: relative;
-    right: 100px;
-    color: #fff5e1;
     text-decoration: none;
   }
 
@@ -102,7 +111,7 @@
   /* using flexbox for nav tag */
 
   .nav {
-    z-index: 100;
+    z-index: 9;
     top: 0;
     left: 0;
     margin-bottom: -100px;
@@ -121,7 +130,7 @@
 
   .movileMenuContainer {
     font-size: 30px;
-    margin: 10px 35px 10px 10px;
+    margin: 10px 35px 10px 0;
   }
 
   /* initialize the .main and use flexbox for all his childs */
@@ -234,10 +243,109 @@
     align-items: center;
   }
 
-  .grid-3-movile {
+  .projectCards {
     position: relative;
     width: 100%;
     top: 139px;
+  }
+
+  .contPopUp {
+    z-index: 10;
+    display: none;
+    position: fixed;
+    padding: 10%;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+  }
+
+  .popUp-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contentPopUp {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0% 5% 5% 5%;
+    box-sizing: border-box;
+  }
+
+  .popUp-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .popUpImg {
+    width: 311px;
+    height: 221px;
+  }
+
+  .exitButton {
+    left: 150px;
+    background-color: transparent;
+    background-image: url(images/exit.png);
+    width: 24px;
+    height: 24px;
+    border: none;
+  }
+
+  .popUp-stack {
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .popUp-btns {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  .button-Live {
+    font-size: 17px;
+    color: white;
+    background-color: #ff6b00;
+    padding: 10px 12px;
+    width: 129px;
+    height: 48px;
+    border: 1px solid #ff6b00;
+    text-align: start;
+  }
+
+  .button-Source {
+    font-size: 17px;
+    color: white;
+    background-color: #ff6b00;
+    padding: 10px 12px;
+    width: 158px;
+    height: 48px;
+    border: 1px solid #ff6b00;
+    text-align: start;
+  }
+
+  .img-btn {
+    z-index: 200;
+    width: 30px;
+    height: auto;
+    position: relative;
+    right: 35px;
   }
 
   .section-2 {
@@ -371,6 +479,14 @@
     border: 1px solid #8993a4;
   }
 
+  .h4-4-5 {
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 122px;
+    height: 40px;
+    border: 1px solid #8993a4;
+  }
+
   /* -- add style to the botton -- */
 
   .button {
@@ -428,6 +544,7 @@
   }
 
   .tech-stack-2 {
+    list-style: none;
     color: white;
     width: 247px;
     display: flex;
@@ -436,6 +553,7 @@
     position: relative;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
     align-items: center;
     font-size: 15px;
     font-family: "Inter", sans-serif;
@@ -476,7 +594,7 @@
     height: 48px;
     border: 1px solid #ff6b00;
     position: relative;
-    top: -128px;
+    top: -118px;
   }
 
   .about-me {
@@ -765,7 +883,7 @@
     display: none;
   }
 
-  .grid-3-movile {
+  .popUph2-m {
     display: none;
   }
 
@@ -1080,6 +1198,7 @@
     width: 67px;
     height: 40px;
     border: 1px solid #8993a4;
+    margin-right: 10px;
   }
 
   .h4-3 {
@@ -1088,6 +1207,7 @@
     width: 95px;
     height: 40px;
     border: 1px solid #8993a4;
+    margin-right: 10px;
   }
 
   .h4-4 {
@@ -1098,11 +1218,20 @@
     border: 1px solid #8993a4;
   }
 
+  .h4-4-5 {
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 122px;
+    height: 40px;
+    border: 1px solid #8993a4;
+    margin-right: 10px;
+  }
+
   /* -- adding grid for projects -- */
 
   /* ---  add other projects   --- */
 
-  .grid-3-desktop {
+  .projectCards {
     width: 369px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1112,24 +1241,145 @@
     padding-bottom: 130px;
   }
 
-  /* -- disable buttons -- */
+  /* -- style for popUp for desktop -- */
 
-  .button-2-desk {
+  .contPopUp {
+    top: 0;
+    left: 0;
+    z-index: 10;
     display: none;
+    position: fixed;
+    padding: 5% 10% 5% 10%;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
   }
 
-  .section-3-desktop {
+  .popUp-main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: relative;
-    flex-grow: 0;
+    justify-content: space-between;
   }
+
+  .contentPopUp {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0% 5% 5% 5%;
+    box-sizing: border-box;
+  }
+
+  .popUp-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .popUph2-d {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .popUpImg {
+    width: 659px;
+    height: 448px;
+  }
+
+  .exitButton {
+    left: 150px;
+    background-color: transparent;
+    background-image: url(images/exit.png);
+    width: 24px;
+    height: 24px;
+    border: none;
+  }
+
+  .popUp-stack {
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: center;
+  }
+
+  .popUp-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .popUp-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .popUp-text {
+    width: 424px;
+    height: 336px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .popUp-btns {
+    width: 80%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  .button-Live {
+    font-size: 17px;
+    color: white;
+    background-color: #ff6b00;
+    padding: 10px 12px;
+    width: 129px;
+    height: 48px;
+    border: 1px solid #ff6b00;
+    text-align: start;
+  }
+
+  .button-Source {
+    font-size: 17px;
+    color: white;
+    background-color: #ff6b00;
+    padding: 10px 12px;
+    width: 158px;
+    height: 48px;
+    border: 1px solid #ff6b00;
+    text-align: start;
+  }
+
+  .img-btn {
+    z-index: 200;
+    width: 30px;
+    height: auto;
+    position: relative;
+    right: 30px;
+  }
+
+  /* -- disable buttons -- */
 
   .button-2 {
     z-index: 1;
     position: relative;
-    top: -30px;
     color: white;
     background-color: #ff6b00;
     width: 369px;
@@ -1165,7 +1415,7 @@
     position: absolute;
     width: 295px;
     font-size: 32px;
-    bottom: -70px;
+    bottom: -40px;
     left: 13px;
   }
 
@@ -1175,15 +1425,16 @@
     position: absolute;
     width: 280px;
     font-size: 16px;
-    top: 41px;
+    top: 32px;
     left: 13px;
   }
 
   .tech-stack-2 {
+    list-style: none;
     color: white;
     width: 247px;
     display: flex;
-    bottom: 27px;
+    bottom: -5px;
     left: 13px;
     position: absolute;
     flex-direction: row;
