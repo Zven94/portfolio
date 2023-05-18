@@ -235,3 +235,20 @@ for (let i = 0; i < burgerMenuAnchor.length; i += 1) {
 for (let i = 0; i < 6; i += 1) {
   creatCardTemplate(i); // call function to create card
 }
+
+// ----------------  Form validation  -----------------------//
+
+const formData = document.querySelector('.form');
+const btnForm = formData.querySelector('button');
+
+function formValidation() {
+  formData['email'].value = 'niCobolanez@gmail.com'
+  const emailForm = formData['email'].value;
+ if ( emailForm === emailForm.toLowerCase()){
+  console.log('true')
+ } else {
+  console.log('false')
+ }
+}
+
+formValidation();
