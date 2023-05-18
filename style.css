@@ -1,5 +1,9 @@
 /* @media give us the tool to creat a rule for an adaptative screen device */
 
+.error {
+  color: red;
+}
+
 @media only screen and (min-width: 375px) and (max-width: 768px) {
   /* My body config */
 

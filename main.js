@@ -240,14 +240,16 @@ for (let i = 0; i < 6; i += 1) {
 
 const formData = document.querySelector('.form');
 const btnForm = formData.querySelector('button');
+const spanError = formData.querySelector('.error');
 
 function formValidation(event) {
-  formData['email'].value = 'nicobolanez@gmail.com'
+  //formData['email'].value = 'nicobolanez@gmail.com'
   const emailForm = formData['email'].value;
  if ( emailForm === emailForm.toLowerCase()){
-
+  spanError.textContent = null;
   console.log('true')
  } else {
+  spanError.textContent = 'Email must to be in lower case';
   event.preventDefault();
   console.log('false');
  }
