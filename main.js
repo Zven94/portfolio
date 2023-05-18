@@ -251,4 +251,4 @@ function formValidation() {
  }
 }
 
-formValidation();
+btnForm.addEventListener('click', formValidation)
