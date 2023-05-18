@@ -243,7 +243,6 @@ const btnForm = formData.querySelector('button');
 const spanError = formData.querySelector('.error');
 
 function formValidation(event) {
-  //formData['email'].value = 'nicobolanez@gmail.com'
   const emailForm = formData['email'].value;
  if ( emailForm === emailForm.toLowerCase()){
   spanError.textContent = null;
