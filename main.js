@@ -243,15 +243,15 @@ const btnForm = formData.querySelector('button');
 const spanError = formData.querySelector('.error');
 
 function formValidation(event) {
-  const emailForm = formData['email'].value;
- if ( emailForm === emailForm.toLowerCase()){
-  spanError.textContent = null;
-  console.log('true')
- } else {
-  spanError.textContent = 'Email must to be in lower case';
-  event.preventDefault();
-  console.log('false');
- }
+  const emailForm = formData.email.value;
+  if (emailForm === emailForm.toLowerCase()) {
+    spanError.textContent = null;
+    console.log('true');
+  } else {
+    spanError.textContent = 'Email must to be in lower case';
+    event.preventDefault();
+    console.log('false');
+  }
 }
 
-btnForm.addEventListener('click', formValidation)
+btnForm.addEventListener('click', formValidation);
