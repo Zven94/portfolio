@@ -282,8 +282,8 @@
   }
 
   .popUpImg {
-    width: 311px;
-    height: 221px;
+    width: 100%;
+    height: auto;
   }
 
   .exitButton {
@@ -1286,8 +1286,9 @@
   }
 
   .popUpImg {
-    width: 659px;
-    height: 448px;
+    width: 100%;
+    height: auto;
+    padding-right: 25px;
   }
 
   .exitButton {
