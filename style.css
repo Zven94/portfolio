@@ -1288,7 +1288,6 @@
   .popUpImg {
     width: 100%;
     height: auto;
-    padding-right: 25px;
   }
 
   .exitButton {
@@ -1487,8 +1486,8 @@
     align-items: center;
     text-align: center;
     background-color: #1c1a19;
-    margin-left: -10px;
-    padding-right: 30px;
+    margin-left: -16px;
+    padding-right: 35px;
     background-image: url(images/background-desktop-2.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -1572,7 +1571,7 @@
     position: relative;
     display: grid;
     bottom: 359px;
-    left: 80px;
+    left: 24px;
     grid-template-columns: repeat(3, 390px);
     grid-template-rows: repeat(4, 30px);
     grid-gap: 24px;
