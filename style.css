@@ -1581,9 +1581,7 @@
   .skill {
     position: relative;
     display: grid;
-    bottom: 16%;/*
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 30px);*/
+    bottom: 16%;
     grid-gap: 24px;
     text-align: center;
     align-items: center;
@@ -1785,7 +1783,6 @@
   }
 
   * {
-    /* border: 1px solid green; */ 
     margin: 0;
   }
 }
