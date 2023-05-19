@@ -286,8 +286,8 @@
   }
 
   .popUpImg {
-    width: 311px;
-    height: 221px;
+    width: 100%;
+    height: auto;
   }
 
   .exitButton {
@@ -485,6 +485,7 @@
     width: 122px;
     height: 40px;
     border: 1px solid #8993a4;
+    font-size: 90%;
   }
 
   /* -- add style to the botton -- */
