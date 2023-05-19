@@ -310,34 +310,39 @@
 
   .popUp-btns {
     padding: 0;
+    width: 75%;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
   }
 
   .button-Live {
-    font-size: 17px;
     color: white;
     background-color: #ff6b00;
     padding: 10px 12px;
-    width: 129px;
+    width: 135%;
     height: 48px;
     border: 1px solid #ff6b00;
     text-align: start;
+    background-image: url('images/icon-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
   }
 
   .button-Source {
-    font-size: 17px;
     color: white;
     background-color: #ff6b00;
     padding: 10px 12px;
-    width: 158px;
+    width: 130%;
     height: 48px;
     border: 1px solid #ff6b00;
     text-align: start;
+    background-image: url('images/GitHubcat-2.png');
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
   }
 
   .img-btn {
@@ -457,7 +462,7 @@
 
   .h4-2 {
     box-sizing: border-box;
-    padding: 10px 12px;
+    padding: 10px 5px;
     width: 67px;
     height: 40px;
     border: 1px solid #8993a4;
@@ -473,7 +478,7 @@
 
   .h4-4 {
     box-sizing: border-box;
-    padding: 10px 12px;
+    padding: 10px 5px;
     width: 61px;
     height: 40px;
     border: 1px solid #8993a4;
@@ -481,11 +486,10 @@
 
   .h4-4-5 {
     box-sizing: border-box;
-    padding: 10px 12px;
+    padding: 10px 1px;
     width: 122px;
     height: 40px;
     border: 1px solid #8993a4;
-    font-size: 90%;
   }
 
   /* -- add style to the botton -- */
