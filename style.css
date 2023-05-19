@@ -598,8 +598,8 @@
   }
 
   .about-me {
-    width: 100%;
-    height: auto;
+    width: 327px;
+    height: 79px;
     position: relative;
     left: 20px;
     color: #ff6b00;
@@ -975,50 +975,55 @@
   }
 
   .section-1 {
+    /*
     position: relative;
-    left: 50px;
+    left: 50px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    background-color: #1c1a19;
+    background-color: transparent;
     margin-left: -10px;
+    padding-top: 15%;
+    padding-left: 3%;
   }
 
-  .h-1 {
+  .h-1 {/*
     position: relative;
     top: 107px;
-    left: 20px;
-    width: 566px;
+    left: 20px;*/
+    width: 80%;
     height: 160px;
     color: #ff6b00;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
+    padding-bottom: 1%;
   }
 
-  .h-2 {
+  .h-2 {/*
     position: relative;
-    color: #fff5e1;
-    width: 566px;
-    height: 24px;
     top: 44px;
-    left: 20px;
+    left: 20px;*/
+    color: #fff5e1;
+    width: 80%;
+    height: 24px;
     background-color: transparent;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 32px;
+    padding-bottom: 1%;
   }
 
-  .para-1 {
+  .para-1 {/*
     position: relative;
+    left: 20px;*/
     color: white;
-    left: 20px;
-    width: 566px;
+    width: 80%;
     height: 123px;
     bottom: -24px;
     background-color: transparent;
@@ -1027,13 +1032,14 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+    padding-bottom: 1%;
   }
 
   .social-media {
     padding: 0;
     position: relative;
-    top: -330px;
-    left: -48%;
+    top: -250px;
+    left: -45%;
     width: 20px;
     height: 178px;
     flex-grow: 0;
@@ -1128,9 +1134,11 @@
   /* -- 3th tittle -- */
 
   .column-2 {
-    width: 94%;
+    width: 94%;/*
     grid-column: 2;
-    grid-row: auto;
+    grid-row: auto;*/
+    display: flex;
+    flex-direction: column;
     justify-content: left;
     float: left;
     padding: 2% 1%;
@@ -1153,11 +1161,11 @@
   .para-2 {
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-top: -5px;
-    width: 95%;
-    height: 40%;
+    margin-top: 1%;
+    width: 80%;
+    height: 35%;
     font-family: 'Inter', sans-serif;
-    font-size: 90%;
+    font-size: 166%;
     line-height: 28px;
     text-align: left;
   }
@@ -1167,13 +1175,14 @@
   .tech-stack {
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 327px;
+    width: 63%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
     font-family: "Inter", sans-serif;
+    margin-top: 2%;
   }
 
   /* -- add style to the botton -- */
@@ -1296,8 +1305,10 @@
   }
 
   .popUpImg {
-    width: 659px;
-    height: 448px;
+    max-width: 100%;
+    width: 59%;
+    height: auto;
+    object-fit: cover;
   }
 
   .exitButton {
@@ -1328,11 +1339,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1%;
   }
 
   .popUp-text {
-    width: 424px;
-    height: 336px;
+    width: 90%;
+    height: auto;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
