@@ -272,7 +272,7 @@
     flex-direction: column;
     background-color: white;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 0% 5% 5% 5%;
     box-sizing: border-box;
   }
@@ -968,7 +968,6 @@
     justify-content: space-between;
     background-color: #1c1a19;
     margin-top: -10px;
-   /* padding-right: 16px;*/
     padding-bottom: 118px;
     background-image: url(images/background-desktop-1.png);
     background-repeat: no-repeat;
@@ -976,9 +975,6 @@
   }
 
   .section-1 {
-    /*
-    position: relative;
-    left: 50px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -990,10 +986,7 @@
     padding-left: 3%;
   }
 
-  .h-1 {/*
-    position: relative;
-    top: 107px;
-    left: 20px;*/
+  .h-1 {
     width: 80%;
     height: 160px;
     color: #ff6b00;
@@ -1004,10 +997,7 @@
     padding-bottom: 1%;
   }
 
-  .h-2 {/*
-    position: relative;
-    top: 44px;
-    left: 20px;*/
+  .h-2 {
     color: #fff5e1;
     width: 80%;
     height: 24px;
@@ -1020,9 +1010,7 @@
     padding-bottom: 1%;
   }
 
-  .para-1 {/*
-    position: relative;
-    left: 20px;*/
+  .para-1 {
     color: white;
     width: 80%;
     height: 123px;
@@ -1135,12 +1123,10 @@
   /* -- 3th tittle -- */
 
   .column-2 {
-    width: 94%;/*
-    grid-column: 2;
-    grid-row: auto;*/
+    width: 94%;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: space-between;
     float: left;
     padding: 2% 1%;
   }
@@ -1248,7 +1234,7 @@
   /* ---  add other projects   --- */
 
   .projectCards {
-    width: 100%;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -1276,7 +1262,7 @@
   .popUp-main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
   }
 
   .contentPopUp {
@@ -1285,7 +1271,7 @@
     background-color: white;
     width: 100%;
     height: 100%;
-    padding: 0% 5% 5% 5%;
+    padding: 3% 2% 2% 2%;
     box-sizing: border-box;
   }
 
@@ -1302,13 +1288,11 @@
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 44px;
   }
 
   .popUpImg {
-    max-width: 100%;
-    width: 59%;
-    height: auto;
+    width: 50%;
+    height: 40vmin;
     object-fit: cover;
   }
 
@@ -1328,6 +1312,8 @@
     flex-direction: row;
     justify-content: start;
     text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   .popUp-body {
@@ -1344,46 +1330,50 @@
   }
 
   .popUp-text {
-    width: 90%;
+    width: 100%;
     height: auto;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 2vmin;
   }
 
   .popUp-btns {
-    width: 80%;
+    width: 32vmin;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     position: relative;
   }
 
   .button-Live {
-    font-size: 17px;
+    font-size: 2vmin;
     color: white;
     background-color: #ff6b00;
     padding: 10px 12px;
-    width: 129px;
-    height: 48px;
+    width: 14vmin;
+    height: 5vmin;
     border: 1px solid #ff6b00;
     text-align: start;
+    background-image: url('images/icon-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
   }
 
   .button-Source {
-    font-size: 17px;
+    font-size: 2vmin;
     color: white;
     background-color: #ff6b00;
-    padding: 10px 12px;
-    width: 158px;
-    height: 48px;
+    padding: 1% 6%;
+    width: 16vmin;
+    height: 5vmin;
     border: 1px solid #ff6b00;
     text-align: start;
+    background-image: url('images/GitHubcat-2.png');
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
   }
 
   .img-btn {
@@ -1520,7 +1510,7 @@
   .section-9 {
     width: 45%;
     padding-top: 10%;
-    padding-left: 6%;    
+    padding-left: 6%;
     display: flex;
     flex-direction: column;
     background-color: #1c1a19;
@@ -1570,8 +1560,6 @@
     bottom: 5px;
     width: 100%;
     height: 813px;
-  /*  padding-right: 5px;
-    padding-left: 15px;*/
     background-color: #1c1a19;
     display: flex;
     flex-direction: column;
@@ -1688,8 +1676,6 @@
     grid-template-rows: auto auto;
     justify-self: center;
     align-items: center;
-    /*column-gap: 24px;
-    grid-gap: 65px;*/
   }
 
   .form {
@@ -1805,7 +1791,7 @@
   }
 
   * {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: 0;
   }
 }

@@ -246,11 +246,9 @@ function formValidation(event) {
   const emailForm = formData.email.value;
   if (emailForm === emailForm.toLowerCase()) {
     spanError.textContent = null;
-    console.log('true');
   } else {
     spanError.textContent = 'Email must to be in lower case';
     event.preventDefault();
-    console.log('false');
   }
 }
 
