@@ -249,12 +249,15 @@
     top: 139px;
   }
 
+  /* ------------------------------- */
   .contPopUp {
+    top: 0;
+    left: 0;
     z-index: 10;
     display: none;
     position: fixed;
-    padding: 10%;
-    color: black;
+    padding: 5% 10% 5% 10%;
+    color: #172b4d;
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -264,7 +267,7 @@
   .popUp-main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
   }
 
   .contentPopUp {
@@ -272,8 +275,8 @@
     flex-direction: column;
     background-color: white;
     width: 100%;
-    height: 100%;
-    padding: 0% 5% 5% 5%;
+    height: 95vh;
+    padding: 3% 2% 2% 2%;
     box-sizing: border-box;
   }
 
@@ -283,11 +286,21 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    font-size: 4vh;
+  }
+
+  .popUph2-m {
+    margin: 0;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.5vh;
   }
 
   .popUpImg {
-    width: 311px;
-    height: 221px;
+    width: 100%;
+    height: 29vh;
+    object-fit: cover;
   }
 
   .exitButton {
@@ -300,44 +313,82 @@
   }
 
   .popUp-stack {
+    width: 100%;
     padding: 0%;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 9vmin;
+  }
+
+  .popUp-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .popUp-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  .popUp-text {
+    width: 100%;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2vh;
+  }
+
+  .listPopUp {
+    width: 40%;
   }
 
   .popUp-btns {
+    width: 100%;
+    height: 6vh;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     position: relative;
   }
 
   .button-Live {
-    font-size: 17px;
     color: white;
     background-color: #ff6b00;
-    padding: 10px 12px;
-    width: 129px;
-    height: 48px;
+    padding: 5px 12px;
+    width: 100%;
+    height: 6vh;
     border: 1px solid #ff6b00;
     text-align: start;
+    background-image: url('images/icon-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+    font-size: 3vmin;
   }
 
   .button-Source {
-    font-size: 17px;
     color: white;
     background-color: #ff6b00;
-    padding: 10px 12px;
-    width: 158px;
-    height: 48px;
+    padding: 1% 6%;
+    width: 100%;
+    height: 6vh;
     border: 1px solid #ff6b00;
     text-align: start;
+    background-image: url('images/GitHubcat-2.png');
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+    font-size: 3vmin;
   }
 
   .img-btn {
@@ -345,7 +396,7 @@
     width: 30px;
     height: auto;
     position: relative;
-    right: 35px;
+    right: 30px;
   }
 
   .section-2 {
@@ -441,7 +492,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
+    font-size: 2.4vh;
     font-family: "Inter", sans-serif;
   }
 
@@ -457,7 +508,7 @@
 
   .h4-2 {
     box-sizing: border-box;
-    padding: 10px 12px;
+    padding: 10px 8px;
     width: 67px;
     height: 40px;
     border: 1px solid #8993a4;
@@ -473,7 +524,7 @@
 
   .h4-4 {
     box-sizing: border-box;
-    padding: 10px 12px;
+    padding: 10px 8px;
     width: 61px;
     height: 40px;
     border: 1px solid #8993a4;
@@ -481,7 +532,7 @@
 
   .h4-4-5 {
     box-sizing: border-box;
-    padding: 10px 12px;
+    padding: 10px 1px;
     width: 122px;
     height: 40px;
     border: 1px solid #8993a4;
@@ -893,11 +944,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background: white;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding-left: 1%;
   }
 
   /* initialize the .header style: sizes, colors and fonts */
@@ -910,7 +964,7 @@
   }
 
   .nav-desktop {
-    width: 100%;
+    width: 101vw;
     height: 72px;
     z-index: 10;
     position: fixed;
@@ -964,7 +1018,6 @@
     justify-content: space-between;
     background-color: #1c1a19;
     margin-top: -10px;
-    padding-right: 16px;
     padding-bottom: 118px;
     background-image: url(images/background-desktop-1.png);
     background-repeat: no-repeat;
@@ -972,50 +1025,44 @@
   }
 
   .section-1 {
-    position: relative;
-    left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    background-color: #1c1a19;
+    background-color: transparent;
     margin-left: -10px;
+    padding-top: 15%;
+    padding-left: 3%;
   }
 
   .h-1 {
-    position: relative;
-    top: 107px;
-    left: 20px;
-    width: 566px;
+    width: 80%;
     height: 160px;
     color: #ff6b00;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
+    padding-bottom: 1%;
   }
 
   .h-2 {
-    position: relative;
     color: #fff5e1;
-    width: 566px;
+    width: 80%;
     height: 24px;
-    top: 44px;
-    left: 20px;
     background-color: transparent;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 32px;
+    padding-bottom: 1%;
   }
 
   .para-1 {
-    position: relative;
     color: white;
-    left: 20px;
-    width: 566px;
+    width: 80%;
     height: 123px;
     bottom: -24px;
     background-color: transparent;
@@ -1024,12 +1071,14 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+    padding-bottom: 1%;
   }
 
   .social-media {
+    padding: 0;
     position: relative;
-    top: -330px;
-    left: -340px;
+    top: -250px;
+    left: -45%;
     width: 20px;
     height: 178px;
     flex-grow: 0;
@@ -1065,9 +1114,10 @@
     justify-items: center;
     align-items: center;
     padding-top: 1px;
-    padding-bottom: 125px;
-    height: 682px;
+    width: 100%;
+    height: auto;
     margin-top: 100px;
+    margin-bottom: 5%;
     color: black;
   }
 
@@ -1085,20 +1135,19 @@
   /* -- second tittle -- */
 
   .header-2 {
-    width: 352px;
+    width: 35%;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     color: #1c1a19;
-    margin-left: -10px;
   }
 
   /* -- add a separator to thee web -- */
 
   .my-separator {
     position: relative;
-    width: 794px;
+    width: 56%;
     height: 1px;
     border-style: solid;
     border-color: black;
@@ -1106,10 +1155,10 @@
   }
 
   .first-work {
+    width: 96%;
     display: grid;
-    grid-template-columns: 684px 448px;
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1%;
     margin-top: 54px;
   }
 
@@ -1117,25 +1166,27 @@
 
   .img-2 {
     grid-row: 1/ span 4;
-    width: 684px;
-    height: 448px;
+    width: 100%;
+    height: auto;
   }
 
   /* -- 3th tittle -- */
 
   .column-2 {
-    grid-column: 2;
-    grid-row: auto;
-    justify-content: left;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     float: left;
+    padding: 2% 1%;
   }
 
   .header-3 {
     grid-column: 2/3;
     grid-row: 2/3;
     color: #091e42;
-    width: 327px;
-    height: 36px;
+    width: 75%;
+    height: auto;
     font-size: 38px;
     font-family: 'Crete Round', sans-serif;
     text-align: start;
@@ -1145,14 +1196,11 @@
   /* -- add style to my second paragraph -- */
 
   .para-2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-top: -5px;
-    width: 448px;
-    height: 147px;
+    margin-top: 1%;
+    width: 80%;
+    height: 35%;
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 2vh;
     text-align: left;
   }
 
@@ -1161,13 +1209,14 @@
   .tech-stack {
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 327px;
+    width: 63%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
     font-family: "Inter", sans-serif;
+    margin-top: 2%;
   }
 
   /* -- add style to the botton -- */
@@ -1232,11 +1281,11 @@
   /* ---  add other projects   --- */
 
   .projectCards {
-    width: 369px;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 24px;
+    grid-gap: 2%;
     justify-content: center;
     padding-bottom: 130px;
   }
@@ -1260,7 +1309,7 @@
   .popUp-main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
   }
 
   .contentPopUp {
@@ -1269,7 +1318,7 @@
     background-color: white;
     width: 100%;
     height: 100%;
-    padding: 0% 5% 5% 5%;
+    padding: 3% 2% 2% 2%;
     box-sizing: border-box;
   }
 
@@ -1286,12 +1335,12 @@
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 44px;
   }
 
   .popUpImg {
-    width: 659px;
-    height: 448px;
+    width: 50%;
+    height: 40vmin;
+    object-fit: cover;
   }
 
   .exitButton {
@@ -1304,12 +1353,15 @@
   }
 
   .popUp-stack {
+    height: 8vh;
     padding: 0%;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: start;
     text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   .popUp-body {
@@ -1322,49 +1374,54 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1%;
   }
 
   .popUp-text {
-    width: 424px;
-    height: 336px;
+    width: 100%;
+    height: auto;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 2vmin;
   }
 
   .popUp-btns {
-    width: 80%;
+    width: 32vmin;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     position: relative;
   }
 
   .button-Live {
-    font-size: 17px;
+    font-size: 2vmin;
     color: white;
     background-color: #ff6b00;
     padding: 10px 12px;
-    width: 129px;
-    height: 48px;
+    width: 14vmin;
+    height: 5vmin;
     border: 1px solid #ff6b00;
     text-align: start;
+    background-image: url('images/icon-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
   }
 
   .button-Source {
-    font-size: 17px;
+    font-size: 2vmin;
     color: white;
     background-color: #ff6b00;
-    padding: 10px 12px;
-    width: 158px;
-    height: 48px;
+    padding: 1% 6%;
+    width: 16vmin;
+    height: 5vmin;
     border: 1px solid #ff6b00;
     text-align: start;
+    background-image: url('images/GitHubcat-2.png');
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
   }
 
   .img-btn {
@@ -1382,12 +1439,13 @@
     position: relative;
     color: white;
     background-color: #ff6b00;
-    width: 369px;
+    width: 100%;
     height: 58px;
     border: 1px solid #ff6b00;
   }
 
   .sec {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1396,6 +1454,8 @@
   }
 
   .div-4 {
+    width: 100%;
+    height: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -1405,17 +1465,17 @@
 
   .img-w1 {
     border: 2px #ff6b00;
-    width: 369px;
-    height: 435px;
+    width: 100%;
+    height: auto;
   }
 
   .header-4 {
     color: white;
     font-family: 'Crete Round', sans-serif;
     position: absolute;
-    width: 295px;
+    width: 62%;
     font-size: 32px;
-    bottom: -40px;
+    top: 40%;
     left: 13px;
   }
 
@@ -1423,19 +1483,19 @@
     color: white;
     font-family: 'Inter', sans-serif;
     position: absolute;
-    width: 280px;
+    width: 62%;
     font-size: 16px;
-    top: 32px;
+    bottom: 27%;
     left: 13px;
   }
 
   .tech-stack-2 {
+    padding-left: 4%;
     list-style: none;
     color: white;
-    width: 247px;
+    width: 62%;
     display: flex;
-    bottom: -5px;
-    left: 13px;
+    bottom: 20px;
     position: absolute;
     flex-direction: row;
     justify-content: space-between;
@@ -1472,14 +1532,14 @@
   }
 
   .about-me {
-    width: 327px;
-    height: 79px;
+    width: 94%;
+    height: auto;
     color: #ff6b00;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
-    margin-top: 120px;
+    text-align: left;
   }
 
   .section-9-1 {
@@ -1490,26 +1550,25 @@
     align-items: center;
     text-align: center;
     background-color: #1c1a19;
-    margin-left: -10px;
-    padding-right: 30px;
     background-image: url(images/background-desktop-2.png);
     background-repeat: no-repeat;
     background-position: bottom right;
   }
 
   .section-9 {
-    margin-left: 100px;
+    width: 45%;
+    padding-top: 10%;
+    padding-left: 6%;
     display: flex;
     flex-direction: column;
     background-color: #1c1a19;
+    justify-content: space-around;
   }
 
   .para-4 {
-    position: relative;
-    top: -50px;
     color: white;
-    width: 566px;
-    height: 148px;
+    width: 94%;
+    height: auto;
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -1520,14 +1579,12 @@
   }
 
   .button-3 {
-    position: relative;
     color: white;
     background-color: #ff6b00;
     padding: 10px 12px;
-    width: 156px;
-    height: 48px;
+    width: 22%;
+    height: auto;
     border: 1px solid #ff6b00;
-    top: -52px;
   }
 
   .img-3 {
@@ -1551,8 +1608,6 @@
     bottom: 5px;
     width: 100%;
     height: 813px;
-    padding-right: 5px;
-    padding-left: 15px;
     background-color: #1c1a19;
     display: flex;
     flex-direction: column;
@@ -1563,7 +1618,7 @@
 
   .my-separator-2 {
     position: relative;
-    width: 1156px;
+    width: 85%;
     top: 109px;
     height: 1px;
     border-style: solid;
@@ -1574,10 +1629,7 @@
   .skill {
     position: relative;
     display: grid;
-    bottom: 359px;
-    left: 80px;
-    grid-template-columns: repeat(3, 390px);
-    grid-template-rows: repeat(4, 30px);
+    bottom: 16%;
     grid-gap: 24px;
     text-align: center;
     align-items: center;
@@ -1615,8 +1667,6 @@
     flex-direction: column;
     grid-column: 1;
     grid-row: 2;
-    position: relative;
-    bottom: -120px;
   }
 
   .coloumn-2-1 {
@@ -1624,8 +1674,6 @@
     flex-direction: column;
     grid-column: 2;
     grid-row: 2;
-    position: relative;
-    bottom: -120px;
   }
 
   .coloumn-3-1 {
@@ -1633,8 +1681,6 @@
     flex-direction: column;
     grid-column: 3;
     grid-row: 2;
-    position: relative;
-    bottom: -150px;
   }
 
   .h5 {
@@ -1666,12 +1712,10 @@
   .section-11 {
     width: 100%;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: auto auto;
-    grid-gap: 65px;
     justify-self: center;
     align-items: center;
-    column-gap: 100px;
   }
 
   .form {
@@ -1690,15 +1734,15 @@
     line-height: 52px;
     line-height: 44px;
     text-align: left;
-    width: 455px;
-    height: 216px;
+    width: 100%;
+    height: auto;
     color: #172b4d;
-    margin-left: 100px;
+    margin-left: 15%;
   }
 
   #name {
     color: #979493;
-    width: 298px;
+    width: 50%;
     margin-bottom: 14px;
     border: none;
     outline: none;
@@ -1708,14 +1752,14 @@
 
   #email {
     color: #979493;
-    width: 684px;
+    width: 100%;
     margin: 39px 0 14px 0;
     border: none;
     outline: none;
   }
 
   .my-separator-3 {
-    width: 684px;
+    width: 100%;
     margin-bottom: 24px;
     height: 1px;
     border-style: solid;
@@ -1728,7 +1772,7 @@
     font-style: italic;
     margin-bottom: 24px;
     font-size: 15px;
-    width: 684px;
+    width: 100%;
     height: 114px;
     border: none;
     background: #fbf8f7;
@@ -1784,5 +1828,9 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+  }
+
+  * {
+    margin: 0;
   }
 }
